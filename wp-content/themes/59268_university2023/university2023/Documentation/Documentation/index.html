@@ -1,0 +1,1897 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>University Wordpress Theme</title>
+	<meta name="description" content="For support please checkout http://www.cactusthemes.com">
+	<meta name="author" content="CactusThemes.com">
+	<meta name="copyright" content="CactusThemes.com">
+	<meta name="date" content="2014-07-02T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/jquery.unveil.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.scrollTo-1.4.7.min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();jQuery(document).ready(function() {
+		  jQuery("img").unveil();
+		});</script>
+
+	<script>document.createElement('section');var duration=913,easing='easeOutQuart';</script>
+	<style type="text/css" media="screen">
+		.accordion-heading .accordion-toggle{font-weight:bold}
+	</style>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#A8A7A7;color:#363636;background-image:url(assets/images/image_1.gif);background-repeat:repeat;background-attachment:scroll;}
+		
+		#documenter_sidebar #documenter_logo{
+		background-image:url(assets/images/logo.jpg);
+		}
+		a{color:#1711AA;}
+		hr{border-top:1px solid #858484;border-bottom:1px solid #CFCDCD; border-left:10px;border-right:10px}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#ffffff;color:#e8e8e8;}		
+		#documenter_sidebar ul a{color:#000;}
+		#documenter_sidebar ul a:hover{background:#e8e8e8;color:#000000;}
+		#documenter_sidebar ul a.current{background:#18376e;color:#ffffff;border-top:1px solid #18376e;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+		.bigfont{font-size:1.5em}
+	</style>
+	 <script>
+		$(function() {
+		$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+		$( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+		});
+		</script>
+		<style>
+		.ui-tabs-vertical { width: 100%; }
+		.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+		.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+		.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+		.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+		.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 59em;}
+		.ui-tabs-vertical .ui-tabs-panel img{max-width:100%}
+		</style>
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<div id="scroller">
+		<ul id="documenter_nav">
+			<li><a class="current section" href="#documenter_cover">First to know</a></li>
+			<li><a href="#introduction" class="section">Introduction</a>
+				
+			</li>
+			<li><a href="#layout" class="section">Layout</a></li>
+			<li><a href="#install" class="section">Installation</a>
+				<ol>
+					<li><a href="#install_wordpress">Install via WordPress</a></li>
+					<li><a href="#install_ftp">Install via FTP</a></li>
+					<li><a href="#install_update">Update Theme</a></li>
+				</ol>
+			</li>
+			<li><a href="#sample_data" class="section">Install Sample Data</a>
+				<ol>
+					<li><a href="#sample_data_oneclick">One Click Install</a></li>
+					<li><a href="#sample_data_manual">Import Manually</a></li>
+				</ol>
+			</li>			
+			<li><a href="#menu" class="section">How To Create Menu</a>
+				<ol>
+					<li><a href="#menu_existing_menu">Existing Menu</a></li>
+					<li><a href="#menu_create_menu">Create Menu</a></li>
+					<li><a href="#menu_multi_menu">Multi Column Menu</a></li>	
+					<li><a href="#menu_uber">The integration of UberMenu</a></li>
+				</ol>
+			</li>
+			<li><a href="#page_setup" class="section">Homepage Setup</a>
+				<ol>
+					<li><a href="#page_setup_homepage">Frontpage templates</a></li>
+				</ol>
+			</li>
+			<li><a href="#widget_sidebar" class="section">Sidebar & Widget</a>
+				<ol>
+					<li><a href="#widget_sidebar_sidebar">Sidebar</a></li>
+					<li><a href="#widget_sidebar_widget">Widget</a></li>					
+				</ol>
+			</li>
+			<li><a href="#theme_options" class="section">Theme Options</a>
+				<ol>
+					<li><a href="#theme_options_general">General</a></li>
+					<li><a href="#theme_options_color">Colors</a></li>
+					<li><a href="#theme_options_fonts">Fonts</a></li>
+					<li><a href="#theme_options_navigation">Navigation</a></li>
+					<li><a href="#theme_options_post">Single Post</a></li>
+					<li><a href="#theme_options_page">Single Page</a></li>
+					<li><a href="#theme_options_archives">Archives</a></li>
+					<li><a href="#theme_options_404">404</a></li>
+					<li><a href="#theme_options_accounts">Social Accounts</a></li>
+					<li><a href="#theme_options_sharing">Social Sharing</a></li>
+				</ol>
+			</li>
+			<li><a href="#shortcode" class="section">Shortcodes</a>
+					<ol>
+					<li><a href="#shortcode_use">How to use shortcode</a></li>
+					<li><a href="#shortcode_post_grid">Post Grid</a></li>
+					<li><a href="#shortcode_post_scroller">Post Scroller</a></li>
+					<li><a href="#shortcode_post_carousel">Post Carousel</a></li>
+					<li><a href="#shortcode_event_calendar">Calendar</a></li>
+					<li><a href="#shortcode_heading">Heading</a></li>
+					<li><a href="#shortcode_button">Button</a></li>
+					<li><a href="#shortcode_textbox">Text Box</a></li>
+					<li><a href="#shortcode_blog">Blog</a></li>
+					<li><a href="#shortcode_blockquote">Block quote</a></li>
+					<li><a href="#shortcode_dropcaps">Dropcaps</a></li>
+					<li><a href="#shortcode_countdown">Count Down</a></li>
+					<li><a href="#shortcode_testimonials">Testimonials</a></li>
+					<li><a href="#shortcode_accordion">Accordion</a></li>
+					<li><a href="#shortcode_Tab">Tab</a></li>
+					<li><a href="#shortcode_tour_section">Tour</a></li>
+					<li><a href="#shortcode_course_list_table">Course List Table</a></li>
+					<li><a href="#shortcode_adsense">Adsense</a></li>
+					<li><a href="#shortcode_compare_table">Compare Table</a></li>
+					<li><a href="#shortcode_video_link">Video Link</a></li>
+					<li><a href="#shortcode_learndash_member">LearnDash Lecturers</a></li>
+				</ol>
+			</li>
+			<li><a href="#Course" class="section">U-Course plugin</a>
+				<ol>
+					<li><a href="#Course_create_a_course">Create a Course</a></li>
+					<li><a href="#Course_course_setting_page">U-Course Settings page</a></li>
+					<li><a href="#Course_course_listing_page">Courses Listing page</a></li>
+					<li><a href="#Course_selling_a_course">Selling a Course</a></li>
+				</ol>
+			</li>
+			<li><a href="#Event" class="section">U-Event plugin</a>
+				<ol>
+					<li><a href="#Event_create_a_event">Create an Event</a></li>
+					<li><a href="#Event_event_setting_page">U-Event Settings page</a></li>
+					<li><a href="#Event_event_listing_page">Events Listing page</a></li>
+					<li><a href="#Event_selling_a_event">Selling an Event</a></li>
+				</ol>
+			</li>			
+			<li><a href="#Member" class="section">U-Member plugin</a>
+				<ol>
+					<li><a href="#Member_add_a_member">Create an Member</a></li>
+					<li><a href="#Member_member_setting_page">U-Member Settings page</a></li>
+					<li><a href="#Member_member_listing_page">Members Listing page</a></li>
+					<li><a href="#Member_shortcodes">Members Shortcodes</a></li>
+				</ol>
+			</li>
+			<li><a href="#project" class="section">U-Project plugin</a>
+				<ol>
+					<li><a href="#project_add_a_project">Create an Project</a></li>
+					<li><a href="#project_project_setting_page">U-Project Settings page</a></li>
+					<li><a href="#project_project_listing_page">Project Listing page</a></li>
+				</ol>
+			</li>
+			<li><a href="#woocommerce" class="section">Woocommerce Setting</a></li>
+            <li><a href="#page_post" class="section">Page & Post</a></li>
+			<li><a href="#translation" class="section">Translation & RTL</a></li>
+			<li><a href="#childtheme" class="section"> Child theme</a>
+				<ol>
+					<li><a href="#childtheme_translate">Translate</a></li>
+					<li><a href="#childtheme_js">Load js</a></li>
+				</ol>
+			</li>	
+			<li><a href="#support" class="section">Licenses & Support</a></li>
+		</ul>
+		</div>
+	</div>
+<div id="documenter_content">
+	<section id="documenter_cover"><h1>University WordPress Theme</h1>
+		<h2>The Documentation</h2><hr><ul><li>Created: July 26th 2014</li>
+		<li><a href="http://themeforest.net/user/cactusthemes">http://themeforest.net/user/cactusthemes</a></li>
+		<li>Email: <a href="mailto:admin@cactusthemes.com">admin@cactusthemes.com</a></li></ul>
+		<p>For support please checkout <a href="http://ticket.cactusthemes.com/">CACTUSTHEME SUPPORT FORUM</a></p>
+	</section>
+	
+	<section id="introduction">
+			<h3>University WordPress Theme </h3><hr class="notop">
+			<p>Welcome to University!</p>
+			<p>Thanks for Buying</p>
+			<p>First of all, thank you for buying our theme. We are a team of developers making awesome Wordpress Theme- University- An amazing Wordpress theme for Education organization, training centres and events. Our product is focused on Courses and Events. University's basic feature is to purchase/enroll event online. However, it can be used for either a business home page or a shopping site. To make your experience pleasant, we have added as much information as needed in this documentation. If you you're stuck with anything, please refer to be supported.</p>
+			<p>Created By: CactusThemes.com</p>
+			<p>Support Site: <a target="_bank" href="http://ticket.cactusthemes.com/">http://ticket.cactusthemes.com</a></p>
+	</section>
+<section id="layout">
+	<h3>University Layout</h3><hr class="notop">
+	<div class="full">
+	<!--<a href="assets/images/Homepage.png">-->
+	<img src="assets/img/loading.gif" data-src="assets/images/Homepage.png"/>
+	<!--</a>-->
+	</div>
+</section>
+<section id="install">
+	<h3>Installation</h3><hr class="notop">
+		<div>The Main Files includes these following files and folders:</div>
+		<div class="box_code">
+			<ul>
+				<li><b> Documentation</b> folder - contains this document and other materials</li>
+				<li><b> Installation Files</b> folder - contains all installable files, including theme & plugins<br>
+					<ul>
+						<li><b>theme/university.zip</b> - University theme</li>
+						<li><b>plugins/u-shortcodes.zip</b> - A plugin which contains all shortcodes for theme which helps you visually build pages.  </li>						
+						<li><b>plugins/u-course.zip</b> - A plugin which enables Course feature for theme</li>
+						<li><b>plugins/u-event.zip</b> - A plugin which enables Event feature for theme</li>
+						<li><b>plugins/u-member.zip</b> - A plugin which enables Member feature for theme </li>						
+						<li><b>plugins/plg-visual-composer.zip</b> - ($25) A page builder plugin for WordPress (visit <a href="http://codecanyon.net/item/visual-composer-page-builder-for-wordpress/242431">Visual Composer)</a></li>	
+						<li><b>plugins/plg-revslider.zip</b>- ($16) The amazing Revolution Slider which creates beautiful image sliders for your website (visit <a href="http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380">Revolution Slider</a></li>
+					</ul>
+				</li>		
+			</ul>
+		</div>
+		<p>It is recommended to install <b>Visual Composer</b> and <b>u-shortcodes</b> plugins at least. Other plugins are optional, which mean you can choose the necessary ones the install.</p>
+	<h4 id="install_wordpress">Install via WordPress</h4>
+		<ol>
+			<li>Login to WordPress Admin</li>
+			<li>In the left menu panel go to <b>Appearance > Themes > Add New</b> to install theme, or <b>Plugins > Add New > Upload</b> to install plugins</li>
+			<li>Click <b>Upload</b></li>
+			<li><b>Browse</b> your download package to select installation files</li>
+			<li>Click <b>Install Now</b> button.</li>
+			<li>Once it's uploaded, click the <b>Activate</b> link</li>
+		</ol>
+		<div><b>Refer video here:</b></div>
+<div class="full">
+<iframe width="660" height="415" src="https://www.youtube.com/embed/8spMHBor7pA?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+	<h4 id="install_ftp">Install via FTP</h4>
+		<ol>
+			<li>Use your FTP software to browse to <b>wp-content/themes</b> folder to install theme or <b>wp-content/plugins</b> folder to install plugins</li>
+			<li>Extract the installation files to their corresponding folders, for example <b><i>university.zip</b></i> to <b>university</b> and upload to server</li>
+			<li>Once it's uploaded, go to your WordPress Admin, browse to <b>Appearance > Themes</b> or <b>Plugins > Installed Plugins</b></li>
+			<li>Click the <b>Activate</b> link</li>
+		</ol>
+	<div>After the process of installation is finished, your page will be displayed in form of a blog page</div>	
+	<div class="clear"><!-- --></div><br>
+	<div><b>Note</b>: You can install optional plugins if needed. We recommend using these extra plugins (free). All have been tested and used on our demo page.<br>
+	Go to <b>Plugins &gt; Add New</b> to install and activate plugins</div>
+<div class="box_code">
+	<ul>
+		<li><a href="http://contactform7.com/"><b>Contact Form 7</b></a> - Simple but flexible contact form plugin</li>
+		<li><a href="http://wordpress.org/plugins/wp-pagenavi/"><b>WP PageNavi</b></a> - Add a more advanced paging navigation to your WordPress blog</li>
+		<li><a href="http://wordpress.org/plugins/categories-images/"><b>Category Images</b></a> - Allow to add image to category</li>
+		<li><a href="http://wordpress.org/plugins/WooCommerce/"><b>WooCommerce</b></a> - An e-commerce toolkit that helps you sell anything. Beautifully.</li>
+		<li><a href="http://wordpress.org/plugins/RegenerateThumbnails/"><b>Regenerate Thumbnails</b></a> - Allow you to regenerate all thumbnails after changing the thumbnail sizes.</li>
+		<li><a href="http://wordpress.org/plugins/FlickrBadgesWidget/"><b>Flickr Badges Widget</b></a> - Display your Flickr latest photostream in widget area using javascript. Easy to customize, just put your Flickr id and your widget ready to lunch.</li>
+		<li><a href="https://wordpress.org/plugins/black-studio-tinymce-widget/"><b>Black Studio TinyMCE Widget</b></a> - Add a WYSIWYG widget based on the standard TinyMCE WordPress visual editor.</li>
+	</ul>
+</div>
+
+	<h4 id="install_update">Update Theme</h4>
+	
+	<h5>Manual Update</h5>
+	<p>Update new version is straight-forward as following steps:</p>
+<ol>
+	<li><b>Deactive current theme</b> by going to <b>Appearance > Themes</b> and activate any other themes such as the default Wordpress 3.6 's <b>Twenty Eleven</b>.</li>
+	<li><b>Delete older version</b> by clicking on <b>Delete</b> link. Confirm to delete.</li>
+	<li><b>Update and re-install</b> new version.</li>
+</ol>
+<p>All posts and settings will be saved. This is data-safe method.</p>
+
+	<h5>Auto Update</h5>
+<ol>
+  <li>Go to <b>Plugins > Add News > Upload</b>, find and install <b>/plugins/envato-wordpress-toolkit.zip</b> file (in the download package)</li>
+  <li>To establish an <b>Envato Marketplace API</b> connection navigate to the Envato Toolkit page and insert your Marketplace username and secret API key in the designated input fields. To obtain your API Key, visit your "My Settings" page on any of the Envato Marketplaces</li>
+  <li>Once the API connection has been established you will see a list of themes that can be auto installed. If you don't see any themes and are certain you've done everything correct, there is a good chance the theme author has not updated their theme to be available for auto install and update. If that's the case, please contact the theme author and ask them to update their theme's information</li>
+  <li><b>Note</b> Only theme is updated. Related plugins must be updated manually. Please check release logs to see if you need to update plugins</li>
+</ol>
+	
+</section><!-- end install section -->
+<section id="sample_data">
+<h3>Install Sample Data</h3><hr class="notop">
+	
+<h4 id="sample_data_oneclick">One+ Click Install</h4>
+	<div class="box_code">
+		<p>Before starting, there are some notes worth checking:</p>
+		<ul>
+			<li>Make sure you have installed all recommended plugins before importing sample data, including	
+				<ul>					
+					<li><a href="#">University Shortcodes</a> (in download package)</li>					
+					<li><a href="#">University Event</a> (in download package)</li>
+					<li><a href="#">University Course</a> (in download package)</li>
+					<li><a href="#">University Member</a> (in download package)</li>					
+					<li><a href="#">Revolution Slider</a> (in download package)</li>
+					<li><a href="#">WPBakery Visual Composer</a> (in download package)</li>
+					<li><a href="#">Black Studio TinyMCE Widget</a> (from WordPress.org)</li>
+					<li><a href="#">Contact Form 7</a> (from WordPress.org)</li>
+					<li><a href="#">Flickr Badges Widget</a> (from WordPress.org)</li>
+					<li><a href="#">WP PageNavi</a> (from WordPress.org)</li>
+					<li><a href="#">WooCommerce</a> (from WordPress.org)</li>					
+				</ul>
+			</li>
+			<li>It is better to install sample data on a fresh Wordpress installation. Therefore, you may want to reset your site to default settings. Install and use <b><a href="http://wordpress.org/plugins/wordpress-reset/" target="_blank">Wordpress Reset</a></b> plugin to do that. After installed, go to <b>Tools &gt; Reset</b></li>
+			<li>The import process may take several minutes due to large data and your server capacity. If your server setting "Max Execution Time" is too low, increase it (as your hosting provider). Please do not close the browser until it finishes. If it fails, you can run this process again until seeing the "Success Message". <b style="color:#FF0000">Demo Images are not installed due to some copyrighted licenses</b>
+			</li>
+			<li>If you have to run the process more than once, menu items may be duplicated. Just go to <b>Appearance &gt; Menus</b> and edit/delete <b>Main Menu</b> items</li>
+			<li>Feature images are not imported (We use licensed photos on our demo page)</li>
+		</ul>
+	</div><br>
+	<ol>
+	<li>Go to <b>Appearance &gt; Theme Options</b>, scroll to bottom, you will see a button <b>Import Sample Data</b>. Click on that and confirm to install sample data. 
+		<div class="full">
+			<img src="assets/img/loading.gif" data-src="assets/images/41.png" alt="">
+		</div>
+	</li>
+	<li>(Additional) Go to <b>Appearance &gt; Widgets</b>, click on each widgets in <b>Footer Sidebar</b>, excerpt <b>U-Divider widgets</b>, and change the <b>Widgets Width</b> setting to <b>col-md-3</b><br/>
+		<div class="full">
+			<img src="assets/img/loading.gif" data-src="assets/images/widget-width--setting.jpg" alt="">
+		</div>
+		<br/><br/>
+					
+	</li>
+	<div class="full">
+		<iframe width="620" height="415" src="https://www.youtube.com/embed/FcBz-cYXx3E?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</ol>
+	
+<h4 id="sample_data_manual">Import Manually</h4>
+	<div><b>Alternatively</b>, you can use traditional way to import data. In <b>/Sample Data/</b> folder, you can find there are:
+		<ul>
+			<li><b>university.xml</b> All Data</li>
+			<li><b>theme-options.txt</b> Theme Options Settings</li>			
+			<li><b>university-widgets.json</b> Widgets settings</li>
+		</ul>
+	</div>
+	<div>
+		To install sample data as seen on <a href="http://demo.cactusthemes.com/university">our demo page</a>, following these steps</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		<strong>Step 0.</strong>&nbsp;Make sure you have installed University theme and all recommended plugins</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		<strong>Step 1.</strong>&nbsp;Go to <b>Tools &gt; Import</b>, then click on <b>Wordpress</b></div>
+	<div>
+		&nbsp;</div>
+	<div>
+		<strong>Step 2.</strong>&nbsp;If it is not yet installed before, you have to install it. On the popup window, click on "Install Now"</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		<strong>Step 3.</strong>&nbsp;After installed successfully, click on <b>Activate Plugin &amp; Run Importer</b></div>
+	<div>
+		&nbsp;</div>
+	<div>
+		<strong>Step 4.</strong>&nbsp;Browse for <a href="javascript:void(0">[path-to-your-downloaded-package]/Sample Data/university.xml</a> or <i>university.xml.gz</i> and click <b>Upload File and Import</b>.</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		<strong>Step 5.</strong>&nbsp;After uploaded, the confirmation page appears. Check the <b>Download and import file attachments</b> option and click <b>Submit</b>. <span style="color:red">If you have trouble with importing (it might breaks in the middle due to long execution time), try again with this option Unchecked! Or, try to import separate files as they are smaller</span></div>
+	<div>
+		&nbsp;</div>
+	<div>
+		<strong>Step 6.</strong>&nbsp;After uploaded, the confirmation page appears. Check the <b>Download and import file attachments</b> option and click <b>Submit</b></div>
+	<div>
+		&nbsp;</div>
+	<div>
+		<strong>Step 7.</strong>&nbsp;When you see message <b>"All done. Have fun!"</b>, you will know that the import is done. <span style="color:red">Note: you may need to re-import the second time if the data is large. Back to Step 1. until you see the message below</span></div>
+	<div>
+		&nbsp;</div>
+	<div class="clear"><!-- --></div>
+	<div><strong>Step 8.</strong>&nbsp;Go to <b>Settings &gt; Reading</b>, set <b>Front page displays</b> to <b>A Static page</b>. Choose <b>Home Page</b> page as <i>Front page</i> and <b>Blog</b> as <i>Posts page</i></div>
+
+	<div><strong>Step 9.</strong>&nbsp;Go to <b>Appearance &gt; Menus</b>, choose <b>Main Navigation</b> menu as <b>Primary Menu</b> and <b>Top Nav</b> as <b>Secondary Menu</b></div>
+
+	<div><strong>Step 10.</strong>&nbsp;Install <b><a href="http://wordpress.org/plugins/widget-settings-importexport/" target="_blank">Widget Settings Importer/Exporter</a></b> and go to <b>Tools &gt; Widget Settings Import</b> to import <b>Sample-data/university-widgets.json</b> file</div>
+
+	<div><strong>Step 11.</strong>&nbsp;Go to <b>Option Tree &gt; Settings &gt; Import</b> and paste content of <b>Sample-Data/theme-options.txt</b> into Theme Options text field, then click <b>Import Theme Options</b> button.</div>
+
+	<div><strong>Step 12.</strong>&nbsp;OK, done!</div>
+</section>
+	
+<section id="menu">
+	<h3>How To Create Menu</h3><hr class="notop">
+		<div>There are two types of menu located in the top of the page in University theme: <b>Primary Menus</b> & <b>Secondary Menus</b> (see <a href="#layout">Theme Layout</a>). If you have imported demo content, follow <a href="#menu_existing_menu">Existing Menu</a> else follow <a href="#menu_create_menu">Creating a New Menu</a> to create a new menu, if you want to use Multi Column Menu, follow <a href="menu_multi_menu">Multi Column Menu</a></div>
+	<h4 id="menu_existing_menu">Existing Menu</h4>
+		<ol>
+			<li>Go to <b>Appearance > Menus</b></li>
+			<li>In the <b>Manage Locations</b> area, under <b>Main Navigation</b>, select menu for <b>Primary Menus & Secondary Menus</b>. Click <b>Save</b></li>
+		</ol>
+		<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/menu-location-choose.jpg"/></div>
+	<h4 id="menu_create_menu">Creating a New Menu</h4>
+		<ol>
+			<li><p>Go to to <b>Appearance > Menus</b></p></li>
+			<li><p>Create a new menu link. Enter a menu name and click <b>Create Menu</b></p></li>
+			<li><p>Use the <b>Custom Links</b> or <b>Pages</b> or <b>Categories</b> boxes at the left column, add items to the menu and drag/drop to arrange them.</p>
+				<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/check-add-to-menu.jpg"/></div>
+			</li>
+			<li><p>If you would like to use this menu in navigation, in the <b>Manage Locations</b> area, under <b>Main Navigation</b>, select your newly created menu into Primary Menus & Secondary. Click <b>Save</b></p></li>
+			<li><p>Click <b>Save Menu</b> and that is all</p></li>
+		</ol>
+		<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/main_menu.png"/></div><br>
+		<div class="clear"><!-- --></div>
+	<h4 id="menu_multi_menu">Multi Column Menu</h4>			
+		<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/menu_column.png"/></div><br>		
+		<ol>	
+			<li>Click on the right arrow of a parent menu item to open Menu item properties.<br/>
+				<div class="full"><img src="assets/img/loading.gif" data-src="assets/images/menu-item-setting.jpg"/></div>				
+			</li>
+			<li>Enter CSS Class <b>multi-column</b> to parent menu item. Enter class <b>column-header</b> to children menu item that you want to make a header</li>
+			<li>If you do not see the CSS Classes, go to <b>Screen Options</b> and click CSS Classes to appear CSS Classes in menu item<br/>
+				<div class="full"><img src="assets/img/loading.gif" data-src="assets/images/screen-options.jpg"/></div>			
+			</li>
+			<div class="full">
+			<iframe width="620" height="415" src="https://www.youtube.com/embed/2BmPySqRKm0?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</ol>
+	<h4 id="menu_uber">The integration of UberMenu with University</h4>
+		<div>University theme is able to compatible with Ubermenu plugin to create beautiful Style menus. It is easy for you to configure UberMenu as the instruction for users written by UberMenu plugin's author. Below is steps for the integration of UberMenu plugin with University theme</div>
+		<ol>
+			<li>First, Install <b>UberMenu</b> plugin, after its installation, <b>UberMenu plugin</b> needs to be activated</li>
+			<li>Go to <b>Appearance > UberMenu > Integration > Automatic Integration Theme Location ></b> check <b>Primary Menus</b> and <b>Save it</b> to activate UberMenu and create other settings</li>
+			<li>Go to <b>Menus</b> to create Menu and configure menu with Ubermenu. Please refer how to configure Style menu of UberMenu in the video of UberMenu's author at the link: <a target="_blank" href="http://youtu.be/Vz0VMgEpI1o?list=PLObX861ISTA6JgNu4-Mp9p5f6YuE1XC8w">http://youtu.be/Vz0VMgEpI1o?list=PLObX861ISTA6JgNu4-Mp9p5f6YuE1XC8w</a></li>
+		</ol>
+			
+</section>
+
+<section id="page_setup">
+<h3>How To Create Home Page</h3><hr class="notop">
+<ol>
+	<li>Create two new pages in WordPress (under <b>Pages > Add new</b>), and publish them. <br/><br/>For the purpose of example, we’ll call these “Home” (for the front, or Home, page) and “Blog”.
+	</li>
+	<li>Go to <b>Settings > Reading Settings</b>, and under “Front page displays”, click the radio button for A static page. <br/><br/>Select “Welcome” in the first drop down (for Front page), and select “Blog” in the second one (for Posts page). Save the changes.
+	</li>
+</ol>
+<h4 id="page_setup_homepage">Frontpage Templates</h4>
+<p>University provides some Frontpage templates to configure special Frontpage (or Home). Current version (1.0) only has one.</p>
+		<ol>
+			<li>Go to <b>Pages > All Pages</b> and edit “Home” page created in previous step</li>
+			<li>
+				Choose "Front Page" in Template. The corresponding metadata will be displayed in the box <b>Front Page Header Settings</b> in the left.<br/>
+				<div class="full"><img src="assets/img/loading.gif" data-src="assets/images/choose-front-page-template.jpg"/></div>
+			</li>
+			<li>Configure the settings. To make it look like our demo page, see Please see the instruction about how to configure homepage <a target="_blank" href="config.html#!/homepage">here</a> 
+				<ul>
+					<li>
+						<p><b>Layout settings</b></p><br/>
+						<table class="table-info">
+						<tr><td><b>Sidebar</b></td><td>Select "Default" to use settings in <b>Theme Options</b> or Front page fullwidth . If you do not choose “Default”, page will be formatted with “Left” sidebar , “Right” sidebar or no sidebar (“Hidden“)</td></tr>
+						<tr><td><b>Content padding</b></td><td>Enable default top and bottom padding for content (30px)</td></tr>
+						<tfoot><td colspan="2"></td></tfoot>
+						</table>
+					</li>
+					<li><p><b>Front Page Header Settings</b></p><br/>
+						<table class="table-info">
+							<tr><td><b>Header Background</b></td><td>Choose the type of background's display. In which<br/>
+									<ul><li><b>Background Image</b>: Background Header is static image. Upload and/or choose an image here</li>
+									<li><b>Revolution Slider</b>: Background Header is a slider using features of Revolution Slider plugin. In order to display Slider, you need to create slider in Revolution Slider and then enter (alias) name here (Configure Header with Revolution Slider see <a target="_blank" href="config.html#!/configure_revolution">here</a>)</li>
+									<li><b>Custom Content</b>:  Background Header will use content in <b>Front Page Sidebar</b>. Go to <b>Appearance > Widgets</b> and drag a widget into this sidebar</li>
+									</ul>			
+							</td></tr>
+							<tr><td><b>Header Custom Height</b></td><td>(Optional) Enter custom height (number of pixel, ex: 400)</td></tr>
+							<tr><td><b>Overlay content</b></td><td>Display articles on top of background content<br/>
+								<ul><li><b>Post Scroller</b>
+										<div class="full"><img src="assets/img/loading.gif" data-src="assets/images/post-scroller.jpg"/></div>
+									</li>
+									<li><b>Post Carousel</b>
+										<div class="full"><img src="assets/img/loading.gif" data-src="assets/images/post-carousel.jpg"/></div>
+									</li>
+								</ul>
+								</td></tr>
+							<tr>
+								<td><b>Post type</b></td><td>Choose the type of content's display of Overlay Content on Header<br/>
+								<ul><li><b>Post</b>: Types of display are articles in Posts </li>
+									<li><b>Event</b>: Types of display are articles in Event</li>
+									<li><b>Course</b>: Types of display are articles in Course</li>
+								</ul>
+								</td>
+							</tr>
+							<tr><td><b>Category</b></td><td> The content of Overlay Content on Header will be displayed by Categories. Enter list of category ID (or slug), separated by a comma (for Overlay Content)</td></tr>
+							<tr><td><b>Tags</b></td><td>The content of Overlay Content on Header will be displayed by Tags. Enter list of tags, separated by a comma (for Overlay Content)</td></tr>
+							<tr><td><b>IDs</b></td><td>Specify post IDs to retrieve (for Overlay Content)</td></tr>
+							<tr><td><b>Count</b></td><td>Number of posts to show (for Overlay Content)</td></tr>
+							<tr><td><b>Visible items</b></td><td>Number of items visible in Carousel. Default is 4 (for Overlay Content)</td></tr>
+							<tr><td><b>Order</b></td><td>Arrange the news according to the criteria of "Order by"- ascending order or descending order</td></tr>
+							<tr><td><b>Order by</b></td><td>Choose criteria to arrange</td></tr>
+							<tr><td><b>Meta Key</b></td><td>Name of meta key for ordering (for Overlay Content)</td></tr>
+							<tr><td><b>Show date</b></td><td>Show date info. With standard posts, this is Published Date. With Event and Course, this is Start Date</td></tr>
+							<tr><td><b>Show price</b></td><td>Hide or show price</td></tr>
+							<tr><td><b>Show Venue</b></td><td>Show Venue with Event & Course post type, or Show Author for Standard post</td></tr>
+							<tr><td><b>Show Time</b></td><td>Show start time. Only works with Event & Course post type</td></tr>
+							<tfoot><td colspan="2"></td></tfoot>
+						</table>
+					</li>
+				</ul>
+			</li>
+		</ol>
+ </section>
+ 
+<section id="widget_sidebar">
+<h3>Sidebar & Widget</h3><hr class="notop">
+	<h4 id="widget_sidebar_sidebar">Sidebar</h4>
+		<ol>
+			<li><b>Main Sidebar</b> - Applied for all pages, excerpt 404-PageNotFound</li>
+			<li><b>Navigation Sidebar</b> - If any widget is used, it replaces default menu</li>
+			<li><b>Top Nav Sidebar</b>: Appear the upper right corner along with Secondary Menus bar. Please see how to configure</li>
+			<li><b>Pathway Sidebar</b> - If any widget is used, it replaces default pathway, only appears on single page</li>
+			<li><b>Front Page Sidebar</b> - Only used in Front Page templates , appear entire heading sections (choose Header background to be custom content)</li>
+			<li><b>Top Sidebar</b>- Appear the underneath of Page Heading and on the Page content </li>
+			<li><b>Bottom Sidebar</b>- Appear on footer section and the underneath of Page content</li>
+			<li><b>Footer Sidebar</b> - When you drag some widget into Footer Sidebar, it will appear contents the underneath of footer.Immediately, it will appear all pages </li>
+			<li><b>Events Sidebar</b> (Enabled when U-Event plugin installed) - Applied for all event-related pages</li>
+			<li><b>Courses Sidebar</b> (Enabled when U-Course plugin installed) - Applied for all course-related pages</li>
+		</ol><br/>
+		<div class="box_code"><b>Note</b>: When you drag widgets into Top, Bottom and Footer Sidebar, the size of each widget is automatically set (divided equally). You can manually set Widget Widget using the select box. Make sure that in each row, the total width column should be 12. After that, widgets are re-arranged into new row. You can use a <b>U-Divider Widget</b> to make a new row manually<br/><br/>
+			<div class="fl"><img src="assets/img/loading.gif" data-src="assets/images/widget-width.jpg"/></div>
+			<div class="fr"><img src="assets/img/loading.gif" data-src="assets/images/u-divider-widget.jpg"/></div>
+			<div class="clear"><!-- --></div>
+			<div class="full"><img src="assets/img/loading.gif" data-src="assets/images/u-divider-widget-2.jpg"/></div>
+		</div>
+		
+	<h4 id="widget_sidebar_widget">Widgets</h4>
+			<ol>
+				<li><b>U-Divider</b>: Used in sidebars (Top, Bottom and Footer)- Horizontal line with 100% of width- Use to separate widgets into a new line.There may be content in the middle
+					<ul><li><b>Title</b>: Text is appeared textbox which is in the middle </li>
+						<li><b>Style</b> 
+							<ul><li><b>Empty divider</b> - Empty content</li>
+								<li><b>Small box</b> - Horizontal line with small textbox which is in the middle</li>
+								<li><b>Big box</b> - Horizontal line with big textbox which is in the middle</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><b>University - Latest Posts</b>: Display the latest articles based on published date
+					<ul><li><b>Category</b> - category ID or Slug</li>
+						<li><b>Tag</b> - Tag list</li>
+						<li><b>IDs</b> - Event ID list. If this parameter is used, other parameters are ignored</li>
+						<li><b>Number of posts</b></li>
+					</ul>
+				</li>
+				<li><b>University - Events Listing</b>: Defined in <b>U-Events plugin</b>
+						<ul><li><b>Order by</b>
+								<ul><li><b>Published Date</b> - Display the latest Events based on published date.</li>
+									<li><b>Start Date, Upcoming Events</b>- Display the upcoming Events based on start date. Arranged in chronological order of the closest events</li>
+									<li><b>Start Date, Recent Events</b>- Display the happened Events based on start date. Arranged in chronological order of the closest events</li>
+								</ul>
+							</li>
+							<li><b>Category</b> - category ID or Slug</li>
+							<li><b>Tag</b> - Tag list</li>
+							<li><b>IDs</b> - Event ID list. If this parameter is used, other parameters are ignored</li>
+							<li><b>Number of posts</b></li>
+						</ul>
+				</li>
+				
+				<li><b>University - Courses Listing</b>- Defined in <b>U-Courses plugin</b>
+						<ul><li><b>Order by </b>
+								<ul><li><b>Published Date</b> - Display the latest Courses based on published date.</li>
+									<li><b>Start Date, Upcoming Events</b> - Display the upcoming Courses based on start date. Arranged in chronological order of the closest courses</li>
+									<li><b>Start Date, Recent Events</b> -  Display the happened Courses based on start date. Arranged in chronological order of the closest courses</li>
+								</ul>
+							</li>
+							<li><b>Category</b> - Category ID or Slug</li>
+							<li><b>IDs</b> - Event ID list. If this parameter is used, other parameters are ignored</li>
+							<li><b>Number of posts</b></li>
+						</ul>
+				</li>
+		</ol>
+
+</section>
+<!-- end Widget & Sidebar section -->
+<section id="theme_options"> 
+<h3>Theme Options</h3><hr class="notop">
+		<p>University comes with a lot of options to help you totally customize the look & feel of your site. Go to <b> Appearance > Theme Options </b>to configure.</p>
+		<p>There are settings for <b> General, Colors, Fonts, Single Post, Single Page, Archives, 404, WooCommerce, Social Accounts, Social Sharing</b>. 
+		Below is the detail of how to use those functions.</p>
+		<div> 
+		<h4 id="theme_options_general">General</h4><hr class="notop">
+				<ol>
+					<li><b>Enable Search:</b> Enable or disable default search form in every pages<br>
+						<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/search.png"/></div><br>
+						<div class="clear"><!-- --></div>
+					</li>
+					<li><b>SEO - Echo Meta Tags:</b> By default, University generates its own SEO meta tags (for example: Facebook Meta Tags). If you are using another SEO plugin like YOAST or a Facebook plugin, you can turn off this option</li>
+					<li><b>Copyright Text:</b> Appear in footer<br>
+						<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/copyright_text.png"/></div><br>
+						<div class="clear"><!-- --></div></li>
+					<li><b>RTL Mode: </b>Support right-to-left language<br>
+						<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/RTL_mode.png"/></div><br>
+						<div class="clear"><!-- --></div></li>
+			       
+			
+					<li><b>Custom CSS:</b> Enter custom CSS. Ex: .class{ font-size: 13px; }</li>
+					<li><b>Custom Code:</b> Enter custom code or JS code here. For example, enter Google Analytics</li>
+					<li><b>Favicon:</b> Upload favicon (.ico) is image file of page's title section<br>
+						<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/Favicon.png"/></div><br>
+						<div class="clear"><!-- --></div></li>
+					<li><b>Logo Image:</b> Upload your logo image<br>
+						<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/Logo_Image.png"/></div><br>
+						<div class="clear"><!-- --></div></li>
+					<li><b>Retina Logo (optional):</b> Retina logo should be two time bigger than the custom logo. Retina Logo is optional, use this setting if you want to strictly support retina devices.</li>
+					<li><b>Login Logo Image:</b> Upload your Admin Login logo image<br>
+						<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/Login_Logo_Image.png"/></div><br>
+						<div class="clear"><!-- --></div></li>
+					<li><b>Scroll Top button:</b> Enable Scroll Top button (when clicking  "Top", it will scroll site which is at the bottom of page to top of the page)<br>
+						<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/Scroll_Top_ button.png"/></div><br>
+						<div class="clear"><!-- --></div>
+					</li>
+				</ol>
+		</div>	
+		<div> 
+			<h4 id="theme_options_color">Colors</h4><hr class="notop">		
+				<ol>
+					<li><b>Main color 1:</b> Choose Main color 1 (Default is light blue #46a5e5) is the background color of Secondary Menu bar
+						<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/Maincolor1.png"/></div><br>
+						<div class="clear"><!-- --></div></li>
+					<li><b>Main color 2:</b> Choose Main color 2 (Default is dark blue #17376e) is the background color of Primary Menu bar
+						<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/Maincolor2.png"/></div><br>
+						<div class="clear"><!-- --></div></li>
+					<li><b>Footer Background Color:</b> Choose Footer background color (Default is Main color 2) is the background color of  Footer Sidebar
+						<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/Footer_Background.png"/></div><br>
+						<div class="clear"><!-- --></div></li>
+				</ol>
+		</div>	
+		<div> 
+			<h4 id="theme_options_fonts">Fonts</h4><hr class="notop">
+				<ol>
+					<li><b>Main Font Family:</b> Enter font-family name here. Google Fonts are supported. For example, if you choose "Source Code Pro" Google Font with font-weight 400,500,600, enter Source Code Pro:400,500,600</li>
+					<li><b>Heading Font Family:</b> Enter font-family name here. Google Fonts are supported. For example, if you choose "Source Code Pro" Google Font with font-weight 400,500,600, enter Source Code Pro:400,500,600. Only few  heading texts are affected</li>
+					<li><b>Main Font Size:</b> Select base font size (px) </li>
+					<li><b>Upload Custom Font 1:</b> Upload your own font and enter name "custom-font-1" in "Main Font Family" or "Heading Font Family" setting above</li>
+					<li><b>Upload Custom Font 2</b> Upload your own font and enter name "custom-font-2" in "Main Font Family" or "Heading Font Family" setting above</li>
+					<li><b>Content Letter Spacing</b>: It is the space among characters in Content for all pages</li>
+					<li><b>Heading Letter Spacing</b>: It is the space among characters in Heading for all pages</li>
+				</ol>
+		</div>
+		
+		<div> 
+			<h4 id="theme_options_navigation">Navigation</h4><hr class="notop">
+				<ol>
+					<li><b>Style:</b> Styles menu
+						<ul>
+							<li>Style 1(Default)<br/>
+							<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/style1.jpg"/></div><br>
+							</li>
+							
+							<li>Style 2<br/>
+							<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/style2.jpg"/></div><br>
+							</li>
+							<li>Style 3<br/>
+							<br/>
+							<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/style3.jpg"/></div><br>
+							</li>
+						</ul>
+					</li>
+					<li><b>Callout Text:</b> Display on Main Navigation, used with Style 3<br>
+					<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/callout_text.jpg"/></div>
+					</li>
+					
+					<li><b>Sticky Menu:</b> Hide/Show sticky memu </li>
+					<li><b>Sticky Menu Layout:</b> Use/Do not use Logo on the sticky menu
+					<br>
+					<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/logo_stickymenu.jpg"/></div>
+					</li>
+					<li><b>Logo Image For Sticky Menu:</b> Upload your logo image for sticky menu</li>
+					
+				</ol>
+		</div>
+		
+		<div> 
+			<h4 id="theme_options_post">Single post</h4><hr class="notop">
+			<ol><li><b>Sidebar:</b> Hide/show left or right Sidebar </li>
+				<li><b>Author:</b> Enable Author information</li>
+					<!--<div class="fl"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/author.png"/></div><br> -->
+				<li><b>About Author:</b> Enable About Author information</li>
+					<!--<div class="fl"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/about_the_author.png"/></div> -->
+						
+					<li><b>Published Date:</b> Enable Published Date information</li>
+					<!--<div class="fl"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/Published_Date.png"/></div><br>-->
+			
+				
+					<li><b>Categories:</b> Enable Categories information</li>
+					<!--<div class="fl"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/Categories.png"/></div><br>-->
+			
+		
+					<li><b>Tags:</b> Enable Tags information</li>
+					<!--<div class="fl"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/Tags.png"/></div><br>-->
+		
+					<li><b>Comment Count:</b> Enable Comment Count Info</li>
+		
+					<li><b>Posts Navigation:</b> Enable Post Navigation</li>
+						<!--<div class="fl"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/Post_Navigation.png"/></div><br>-->
+			</ol>
+			
+			<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/Single-Blog-Video-Post.png"/></div><br>
+			<div class="clear"><!-- --></div>					
+		</div>
+		<div> 
+			<h4 id="theme_options_page">Single Page</h4><hr class="notop">
+			
+				<ol>
+					<li><b>Sidebar:</b> Hide/show left or right Sidebar. This setting can be overriden in each page</li>
+				</ol>
+			
+		</div>
+	
+		<div> 
+			<h4 id="theme_options_archives">Archives</h4><hr class="notop">
+			<ol>
+				<li><b>Archives:</b> Select default Sidebar position for Archive pages (Posts, Categories, Tags, Author, Search Result pages)</li>
+			</ol>
+		</div>
+		
+		<div> 
+			<h4 id="theme_options_404">404</h4><hr class="notop">
+			<li><b>404 - Page Not Found:</b>  Announce for unreal pages <br>
+				<ul><li><b>Page Title:</b> Enter title for announcing page <br></li>
+					<li><b>Page Content:</b> Enter announcing content</li>
+					<li><b>Search Form:</b> Enable Search Form in 404 page</li>
+						<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/404.png"/></div>
+				</ul>
+			</li>
+		</div>
+		<div> 
+			<h4 id="theme_options_accounts">Social Accounts</h4><hr class="notop">
+				<li>Appear under the right corner of the bottom of page 
+					<ol><li><b>Facebook:</b> Enter full link to your profile page</li>
+						<li><b>Twitter: </b>Enter full link to your profile page</li>
+						<li><b>LinkedIn :</b> Enter full link to your profile page</li>
+						<li><b>Tumblr :</b> Enter full link to your profile page</li>
+						<li><b>Google Plus : </b>Enter full link to your profile page</li>
+						<li><b>Pinterest :</b> Enter full link to your profile page</li>
+						<li><b>YouTube :</b> full link to your profile page</li>
+						<li><b>Flickr :</b> Enter full link to your profile page</li>
+						<li><b>Email:</b> Enter email contact</li>
+					</ol>
+				</li>	
+		</div>
+		<div> 
+			<h4 id="theme_options_sharing">Social Sharing</h4><hr class="notop">
+				<div>Appear in <b>"Single Post"</b>
+					
+					<ol><li><b>Facebook:</b> Enable Facebook Share button</li>
+						<li><b>Twitter: </b>Enable Twitter Share button</li>
+						<li><b>LinkedIn :</b> Enable LinkedIn Share button</li>
+						<li><b>Tumblr :</b> Enable Tumblr Share button</li>
+						<li><b>Google + :</b> Enable Google+ Share button</li>
+						<li><b>Pinterest :</b> Enable Pinterest Pin button</li>
+					</ol>
+				</div>
+		</div>
+</section><!-- end Theme Options -->
+<section id="shortcode">
+<h3>University Shortcodes</h3><hr class="notop">
+		<p>Shortcodes can be used in either Classic Editor or Visual Composer mode (require <b>Visual Composer</b> plugin installed). You can type shortcode directly in Classic Editor or use Visual Composer element to configure the shortcode</p>
+		<div class="box_code">Most of the properties of shortcodes are optional. You only need to include properties when needed</div>
+	<h4 id="shortcode_use">How to use Shortcodes</h4>
+	<div>There are three options to use shortcode</div>
+		<ol>
+			<li><b>Option 1</b>: Copy the shortcode sample from our document and paste that into Page or Post content, then enter needed values. See the description image below <br/>
+				<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/copyshortcode.jpg"/></div>
+				<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/patseshortcode.jpg"/></div>
+				
+			</li>
+			<li><b>Option 2</b>: Insert shortcode to Classic Editor using Cactus-Shortcode Icon on the editor toolbar <img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_mini.png"/>
+				<ul><li>Click the shortcode icon <img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_mini.png"/> to open the window in which there is a list of shortcodes<br/>
+						<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/openshortcode.jpg"/></div>
+					</li>
+					<li>Click a shortcode buton (for example: Post Grid shortcode), then enter needed values<br/>
+					<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/entershortcode.jpg"/></div>
+					</li>
+					<li>Click <b>OK</b> to insert shortcode into the editor<br/>
+					<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/ketquahienthishortcode.jpg"/></div>
+					</li>
+				</ul>
+			</li>
+			<li>Option 3: Use Backend Editor (Visual Composer)
+				<ul><li>Click Backend Editor<br/>
+						<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/backendeditor.jpg"/></div>
+					</li>
+					<li>Click Add Element<br/>
+						<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/addelement.jpg"/></div>
+					</li>
+					<li>Click a shortcode (for example: Post Grid shortcode), then enter needed values <br/>
+						<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/addpostgridshortcode.jpg"/></div><br/>
+						<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/editpostgridshortcode.jpg"/></div>
+					</li>
+					<li>Click <b>Save Change</b> to insert shortcide into the editor <br/>
+						<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/ketquapostgridshortcode.jpg"/></div>
+					</li>
+				
+				</ul>
+			</li>
+	
+	
+	</ol>
+	
+	<h4 id="shortcode_post_grid">Post Grid</h4>
+						<p>The content is displayed in form of Grid. The content may be Posts, Events or Courses </p>
+							<textarea cols="150">[u_post_grid title="" description="" link_text="" link_url="" header_background="" column="" post_type="" cat="" count="" orderby="" meta_key="" show_date="" show_price="" show_venue="" show_cat_name="" show_time="" gallery=""]</textarea>
+							<p>The [u_post_grid] shortcode has the following variables/options:</p>
+							
+							<ol>
+								<li><b>title</b>: Enter title for description content, the content may be article for an event or a course....</li>
+								<li><b>description</b>: Content text in description panel</li>
+								<li><b>link_text</b>: Enter text for button, when users click this text, they will be linked to another website (Ex: Enter text with name 'All events'). If the content is not entered here, the default text will be "View All"</li>
+								<li><b>link_url</b>: Enter link URL needing to create a link, if it is empty,  the button "Link text" will be invisible. </li>
+								<li><b>post_type </b>:Choose types of post needing to display, there are three options
+									<ul><li> post: Displayed content will be articles in Posts</li>
+										<li>u_event: Displayed content will be articles in Event (U_Event)</li>
+										<li>u_course: Displayed content will be articles in Course (U_Course)</li>
+									</ul>
+								</li>
+								<li><b>cat</b>: If you want the news to be published to be articles in the Category belonging to Event or Course or Posts, please enter list of categories'ID (or slug), separated by a comma</li>
+								<li><b>tag</b>: If you want the news to be published to be articles in Tags belonging to Event or Course or Posts, please enter list of tags, separated by a comma	</li>		
+								<li><b>ids</b>:	 If you want the news to be published to be articles, events, courses, please enter the correct ID name of Posts, Events, Courses</li>
+								<li><b>count</b>: Enter Number of posts to show. Default is 7</li>
+								<li><b>oder</b>: Arrange the news according to the criteria of "Order by"- ascending order or descending order </li>
+								<li><b>oderby</b>: Arranging criteria
+									<ul><li>date: Arranged by showing according to date( The default value is Date)</li>
+										<li>none: No order </li>
+										<li>ID: Order by post ID. Note the captialization. </li>
+										<li>author: Order by author. </li>
+										<li>title: Order by title. </li>
+										<li>name: Order by post name (post slug). </li>
+										<li>date: Order by date. </li>
+										<li>modified: Order by last modified date. </li>
+										<li>parent: Order by post/page parent id.</li> 
+										<li>rand: Random order. </li>
+										<li>comment_count: Order by number of comments </li>
+										<li>menu_order: Order by Page Order.	</li>
+										<li>meta_value: Note that a 'meta_key=keyname' must also be present in the query. Note also that the sorting will be alphabetical which is fine for strings (i.e. words), but can be unexpected for numbers (e.g. 1, 3, 34, 4, 56, 6, etc, rather than 1, 3, 4, 6, 34, 56 as you might naturally expect). Use 'meta_value_num' instead for numeric values. </li>
+										<li>meta_value_num: Order by numeric meta value (available with Version 2.8). Also note that a 'meta_key=keyname' must also be present in the query. This value allows for numerical sorting as noted above in 'meta_value'. </li>
+										<li>post_in: Preserve post ID order given in the post__in array </li>
+										<li>recent:  Display the happening Events based on Start date. Arranged in chronological order of the closest events</li>
+										<li>upcoming: Display the upcoming Events/Course based on Start Date. Arranged by chronological order of the upcoming events/courses</li>
+									</ul>
+								</li>
+								<li><b>meta_key </b>: Name of meta key for ordering</li>
+
+								<li><b>show_date:</b> Default  1/true (note: 0/false, 1/true)- show or hide published date (for post) or start-date (for course, event)</li>
+								<!--<li><b>show_description_panel</b> (optional) – default  1/true (1/true, 2/false) – show or hide description panel of shortcode. This is applied for event and course grid-type</li>-->
+								<li><b>show_price:</b> Show or hide price</li>
+								<li><b>show_venue</b>: Show or hide Venue with Event & Course post type, or Show Author for Standard post</li>
+								<li><b>show_time</b>: Show start time. Only works with Event & Course post type</li>
+								<li><b>gallery</b>: Enable Gallery Popup when clicking on post thumbnail images</li>
+							</ol>
+		
+				<div class="full">
+					<img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_grid_event.png"/>
+				</div>
+	
+	
+	<h4 id="shortcode_post_scroller">Post Scroller</h4>		
+				<textarea cols="120">[u_post_scroller post_type="" cat="" order="" orderby="" meta_key="" link_text="" link_url=""]</textarea>
+				<div>The [u_post_scroller] shortcode has the following variables/options:</div>
+					<ol><li><b>post_type</b> (optional) – Default ‘post’
+							<ul><li><b>post</b>: Default post </li>
+								<li><b>u_event</b> (custom post type)</li>
+								<li><b>u_course</b> (custom post type)</li>
+							</ul>
+						</li>
+						<li><b>count</b> (optional) – Default 4</li>
+						<li><b>order</b> (optional) – Default DESC (ASC|DESC)</li>
+						<li><b>orderby</b> (optional) – Default DATE
+							<ul><li>'none' - No order </li>
+								<li>'ID' - Order by post id. Note the captialization. </li>
+								<li>'author' - Order by author. </li>
+								<li>'title' - Order by title. </li>
+								<li>'name' - Order by post name (post slug). </li>
+								<li>'date' - Order by date. </li>
+								<li>'modified' - Order by last modified date. </li>
+								<li>'parent'- Order by post/page parent id.</li> 
+								<li>'rand' - Random order. </li>
+								<li>'comment_count' - Order by number of comments </li>
+								<li>'menu_order'- Order by Page Order. Used most often for Pages (Order field in the Edit Page Attributes box) and for Attachments (the integer fields in the Insert / Upload Media Gallery dialog), but could be used for any post type with distinct 'menu_order' values (they all default to 0). </li>
+								<li>'meta_value' - Note that a 'meta_key=keyname' must also be present in the query. Note also that the sorting will be alphabetical which is fine for strings (i.e. words), but can be unexpected for numbers (e.g. 1, 3, 34, 4, 56, 6, etc, rather than 1, 3, 4, 6, 34, 56 as you might naturally expect). Use 'meta_value_num' instead for numeric values. </li>
+								<li>'meta_value_num' - Order by numeric meta value (available with Version 2.8). Also note that a 'meta_key=keyname' must also be present in the query. This value allows for numerical sorting as noted above in 'meta_value'. </li>
+								<li>'post__in'- Preserve post ID order given in the post__in array </li>
+							</ul>
+						</li>
+						<li><b>meta_key</b> (Optional) ame of meta key for ordering</li>
+						<!--<li><b>visible</b> (optional): Number of visible items. Default: 4</li>-->
+						<li><b>link_text</b> (optional) – Label of more link. If not set, “More” button is not shown</li>
+						<li><b>link_url</b> (optional) – URL of more link</li>
+						<li><b>cat (optional)</b>: ID or slug of categories. Separated by a comma. Ex. 1,2,3,4</li>
+						<li><b>tag (optional)</b>: Tags list. Separated by a comma. Ex. Tag1, tag2, tag3</li>
+						<li><b>ids</b> (optional): IDs of posts. Separated by a comma. Ex. 1, 2, 3, 4</li>
+					</ol>
+							
+					<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/image002.jpg"/></div>
+
+	
+	<h4 id="shortcode_post_carousel">Post Carousel</h4>	
+				<textarea cols="120">[u_post_carousel post_type="" cat="" count="" visible="" order="" orderby="" meta_key="" show_date="" show_price="" show_venue="" show_time=""]</textarea>
+				<div>The [u_post_carousel] shortcode has the following variables/options:</div>
+					<ol><li><b>post_type</b> (optional) – default ‘post’
+							<ul><li><b>post:</b> default post </li>
+								<li><b>u_event</b> (custom post type)</li>
+								<li><b>u_course</b> (custom post type)</li>
+							</ul>
+						</li>
+						<li><b>cat</b> (optional): ID or slug of categories. Separated by a comma. Ex. 1,2,3,4</li>
+						<li><b>tag</b> (optional): tags list. Separated by a comma. Ex. Tag1, tag2, tag3</li>
+						<li><b>ids</b> (optional): IDs of posts. Separated by a comma. Ex. 1, 2, 3, 4</li>
+						<li><b>count</b> (optional) – Default 4</li>
+						<li><b>visible</b> (optional): Number of visible items. Default: 4</li>
+						<li><b>order</b> (optional) – Default DESC (ASC|DESC)</li>
+						<li><b>orderby</b> (optional) – Default DATE
+							<ul><li>'none'- No order </li>
+								<li>'ID' - Order by post id. Note the captialization. </li>
+								<li>'author' - Order by author. </li>
+								<li>'title' - Order by title. </li>
+								<li>'name' - Order by post name (post slug). </li>
+								<li>'date' - Order by date. </li>
+								<li>'modified' - Order by last modified date. </li>
+								<li>'parent' - Order by post/page parent id. </li>
+								<li>'rand' - Random order. </li>
+								<li>'comment_count' - Order by number of comments </li>
+								<li>'menu_order' - Order by Page Order. Used most often for Pages (Order field in the Edit Page Attributes box) and for Attachments (the integer fields in the Insert / Upload Media Gallery dialog), but could be used for any post type with distinct 'menu_order' values (they all default to 0). </li>
+								<li>'meta_value' - Note that a 'meta_key=keyname' must also be present in the query. Note also that the sorting will be alphabetical which is fine for strings (i.e. words), but can be unexpected for numbers (e.g. 1, 3, 34, 4, 56, 6, etc, rather than 1, 3, 4, 6, 34, 56 as you might naturally expect). Use 'meta_value_num' instead for numeric values. </li>
+								<li>'meta_value_num' - Order by numeric meta value (available with Version 2.8). Also note that a 'meta_key=keyname' must also be present in the query. This value allows for numerical sorting as noted above in 'meta_value'. </li>
+								<li>'post__in' - Preserve post ID order given in the post__in array </li>
+                                <li>'Start date, Upcoming Event or Course' - Display the upcoming Events/Course based on Start Date. Arranged by chronological order of the upcoming events/courses</li>
+                                <li>'Start date, Recent Event or Course' - Display the recent Events/Course based on Start Date. Arranged by chronological order of the recent events/courses </li>
+							</ul>
+						</li>
+						<li><b>meta_key</b> (optional): Name of meta key for ordering</li>
+						<li><b>show_date</b> (optional): Show date info. With standard posts, this is Published Date. With Event and Course, this is Start Date</li>
+						<li><b>show_price</b> (optional): Show price info. Only works with Event post type</li>
+						<li><b>show_venue</b> (optional): Show venue info. Only works with Event & Course post type</li>
+						<li><b>show_time</b> (optional): Show start time. Only works with Event & Course post type</li>
+					</ol>
+		
+						<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_post_carousel.png"/></div>
+			
+	<h4 id="shortcode_event_calendar">Calendar</h4>
+		<div>This shortcode is available in <b>u-event</b> and <b>u-course</b> plugin. The Calendar shortcode displays active events or courses in a calendar-view (it's not possible to display both events and courses in a calendar). Users can see events or courses in different months by navigating through navigation buttons. In addition, they can switch from calendar-view to list-view if needed<br/><br/></div>
+		<textarea cols="80">[u-calendar post_type="" month="" year="" cat="" exclude="" ignore=""]</textarea>
+		<div><b>Properties</b></div>
+		<ul>
+			<li><b>post_type</b>: Choose between <b>u_event</b> (to display Events) or <b>u_course</b> (to display Courses)</li>
+			<li><b>month</b>: Default month to display events. By default, the calendar displays current month of current year</li> 
+			<li><b>year</b>: Default year to display events. By default, the calendar displays current month of current year</li>
+			<li><b>tag</b>: Enter Event Tags to filter events, separated by a comma. For example: "tag-1, tag-2"</li>
+			<li><b>cat</b>: Enter Event Category to filter events, separated by a comma. For example: "cat-1, cat-2"</li>
+			<li><b>exclude</b>: If you want to hide specific events, enter Event ID List here. For example: "1, 2, 3"</li>
+			<li><b>ignore</b> (select): Choose between "<b>recent</b>" (hide expired events) or "<b>upcoming</b>" (hide upcoming events)</li>
+			
+		</ul>
+		<div><img alt="" src="assets/img/loading.gif" data-src="assets/images/event-calendar.png"/></div>
+	<h4 id="shortcode_heading">Heading</h4>
+				<div>Create a separating line among the contents in the page "Page Content"</div>
+				<textarea cols="80">[u_heading url=""]Heading text here[/u_heading]</textarea>
+				<div>The [u_heading] shortcode has the following variables/options:</div>
+					<ul><li><b>url:</b> Enter URL link to navigate</li></ul>
+						<div><img alt="" src="assets/img/loading.gif" data-src="assets/images/u-Divider.png"/></div>
+				
+	
+	<h4 id="shortcode_button">University Button</h4>		
+				<textarea cols="100">[ct_button link="" icon="" target="" size="" solid="" has_arrow="" color="" css_animation=""]enter button text here[/ct_button]</textarea>
+				<div>The [ct_button] shortcode has the following variables/options:</div>
+				<ol>
+					<li><b>link</b>- Enter URL of link</li>
+					<li><b>icon (optional)</b> – Name of FontAwesome icon (without “fa-”)
+					<li><b>target</b> - Open link in New Tab or Curent Tab
+					<li><b>size</b> (optional) – Default value “small”
+						<ul><li>small</li>
+							<li>big</li>
+						</ul>
+					</li>
+					<!--<li><b>schema</b> (optional) – default “light”
+						<ul><li>light</li>
+							<li>dark</li>
+						</ul>
+					</li>-->
+					<li><b>solid</b> (optional) – Default value “0/false” – Solid background or not
+							<ul><li>0/false</li>
+								<li>1/true: Border and background color have same color</li>
+							</ul>
+					</li>
+					<li><b>has_arrow</b> (optional) – Default value “1/true”
+						<ul><li>1/true</li>
+							<li>0/false</li>
+						</ul>
+					</li>
+					<li><b>color</b> (optional) – Only works with solid button (default theme color)</li>
+					<li><b>css_animation</b> - Select types of animation for element to be animated when it "enters" the browsers viewport (Note: works only in modern browsers), with options: top-to-bottom, bottom-to-top, left-to-right, right-to-left, appear-from-center</li>
+					<ul><div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_button.png"/></div></ul>
+					</li>
+
+				</ol>
+									
+	
+	<h4 id="shortcode_textbox">TextBox</h4>
+				<textarea cols="120" rows="2">[textbox icon="" link="" target="" heading="" layout="" schema="" icon_background_color="" icon_background_hover="" heading_color="" content_color="" css_animation=""]Enter content text here[/textbox]</textarea>
+				<div>The [textbox] shortcode has the following variables/options:</div>
+				<ol><li><b>icon</b> (optional) – FontAwesome Icon (without “fa-“)</li>
+					<li><b>link</b> - Open Link in New tab or Curent tab</li>
+					<li><b>heading</b> (optional) – Heading text</li>
+					<li><b>layout</b> (optional) – Default “left”
+							<ul><li>left: Icon floats left, text align left</li>
+								<li>center: Icon is center, text align center</li>
+								<li>right: Icon floats right, text align right</li>
+							</ul>
+					</li>
+					<li><b>schema</b> (optional) – Default “light”
+							<ul><li>light: Light color</li>
+								<li>dark: Dark color</li>
+							</ul>
+					</li>
+					<li><b>icon_background_color</b> – Default #fff (“dark” schema) and #343434 (“light” schema)
+						<ul><li>#RGB</li></ul>
+					</li>
+					<li><b>icon_background_hover</b> – Default theme color – background color of icon when mouse-hovered
+						<ul><li>#RGB</li></ul>
+					</li>
+					<li><b>heading_color</b> – Default #fff (“dark” schema) and #343434 (“light” schema)
+						<ul><li>#RGB</li></ul>
+					</li>
+					<li><b>content_color</b> – Default #FFF, opacity 50% (“dark” schema) and #343434, opacity 50% (“light” schema)
+						<ul><li>#RGB</li></ul>
+					</li>
+					<li><b>css_animation</b> - Select types of animation for element to be animated when it "enters" the browsers viewport (Note: works only in modern browsers), with options: top-to-bottom, bottom-to-top, left-to-right, right-to-left, appear-from-center</li>
+					<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_texbox.png"/></div>
+				</ol>
+				
+	<h4 id="shortcode_blog">Blog</h4>
+
+				<textarea cols="120" rows="2">[u_blog title="" post_type="" cat="" count="" order="" orderby="" meta_key="" show_date="" show_price="" show_comment_count="" show_cat_name="" more_text="" more_link="" detail_text="" column="" css_animation=""]</textarea>
+				<div>The [u_blog] shortcode has the following variables/options:</div>
+						<ol><li><b>post_type</b> (optional) – Default ‘post’
+								<ul><li>post: Default post </li>
+									<li>u_event (custom post type)</li>
+									<li>u_course (custom post type)</li>
+								</ul>
+							</li>
+							<li><b>count</b> (optional) – Default 4</li>
+							<li><b>order</b> (optional) – Default DESC
+								<ul><li>ASC|DESC</li></ul>
+							</li>
+							<li><b>orderby</b> (optional) – Default DATE
+									<ul><li>'none' - No order </li>
+										<li>'ID' - Order by post ID. Note the captialization. </li>
+										<li>'author' - Order by author. </li>
+										<li>'title' - Order by title. </li>
+										<li>'name' - Order by post name (post slug). </li>
+										<li>'date' - Order by date. </li>
+										<li>'modified' - Order by last modified date. </li>
+										<li>'parent' - Order by post/page parent ID. </li>
+										<li>'rand' - Random order. </li>
+										<li>'comment_count' - Order by the number of comments </li>
+										<li>'menu_order' - Order by Page Order. Used most often for Pages (Order field in the Edit Page Attributes box) and for Attachments (the integer fields in the Insert / Upload Media Gallery dialog), but could be used for any post type with distinct 'menu_order' values (they all default to 0). </li>
+										<li>'meta_value' - Note that a 'meta_key=keyname' must also be present in the query. Note also that the sorting will be alphabetical which is fine for strings (i.e. words), but can be unexpected for numbers (e.g. 1, 3, 34, 4, 56, 6, etc, rather than 1, 3, 4, 6, 34, 56 as you might naturally expect). Use 'meta_value_num' instead for numeric values. </li>
+										<li>'meta_value_num' - Order by numeric meta value (available with Version 2.8). Also note that a 'meta_key=keyname' must also be present in the query. This value allows for numerical sorting as noted above in 'meta_value'. </li>
+										<li>'post__in' - Preserve post ID order given in the post__in array </li>
+									</ul>
+								</li>
+							<li><b>meta_key</b> (optional)
+									<ul><li>name of meta key for ordering</li></ul>
+							</li>
+							<li><b>show_date </b>(optional) – Default  1/true - Show or hide published date (for post) or start-date (for course, event)
+									<ul><li>1/true </li>
+										<li>0/false</li>
+									</ul>
+							</li>
+                            <li><b>show_price </b>(optional) – Default  0/false - Show or hide price (for course, event)
+									<ul><li>0/false </li>
+										<li>1/true</li>
+									</ul>
+							</li>
+							<li><b>more_text</b> (optional) – Default “Visit Blog”
+										<ul><li>If it is not set, this button will not be shown</li></ul>
+								</li>		
+								
+							<li><b>more_link </b>(optional) – Default link to archive pages of post types</li>
+								
+							<li><b>detail_text</b> (optional) – Default “Details”
+										<ul><li>If it is not set, this button will not be shown</li></ul>
+								</li>
+							<li><b>show_comment_count</b> (optional) – Default “1/true”
+										<ul><li>1/true</li>
+											<li>0/false</li>
+										</ul>
+									</li>
+
+							<li><b>column</b> (optional) – Default “1/true” – 2 columns or 1 column
+									<ul><li>1/true</li>
+										<li>0/false</li>
+									</ul>
+								</li>
+							<li><b>css_animation</b> - Select types of animation for element to be animated when it "enters" the browsers viewport (Note: works only in modern browsers), with options: top-to-bottom, bottom-to-top, left-to-right, right-to-left, appear-from-center</li>
+							<li><b>cat</b> (optional)  - List of cat ID (or slug), separated by a comma</li>
+							<li><b>tag</b> (optional) - List of tags, separated by a comma</li>
+							<li><b>ids</b> (optional) - List of post ids, separated by a comma. If this param is presented, "cats" and "tags" params are useless<br>
+							<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_blog.png"/>	</div>
+							</li>
+
+						</ol>
+			
+	<h4 id="shortcode_blockquote">Blockquote</h4>
+			<div> <b>Blockquote:</b> Create content of quotation, the quoted content is always indented a little space and highlighted with background’s color </div>
+			<textarea cols="40" rows="1"> <blockquote>Text here</blockquote> </textarea>
+			<div class="clear"><!-- --></div>
+				
+	
+	<h4 id="shortcode_dropcaps">Dropcaps </h4>
+			<div> <b>Dropcaps</b> creates uppercase for the beginning of the line. “Drop cap” is one of the commonly used typography in the magazine on paper as well as electronic magazine.<br/><br/>
+			It is often used at the beginning of each article with large font and highlighted color </div>
+			<div>Go to <b>Pages > Add New </b>> Click Shortcode icon <img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_mini.png"/> on formatting toolbar > Choose <b>Dropcap</b></div>
+							<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/dropcap_shortcode.png"/></div><br>
+							<div class="clear"><!-- --></div>
+			<div>Dropcap shortcode is defined as follows</div>
+			<textarea cols="100">[dropcap]D[/dropcap]ropcap with the first letter</textarea>
+							<div>Including:</div>			
+							<ul><li><b>[dropcap] & [/dropcap]</b> is a start & end tag <br></li>
+								<li><b>Dropcap text here</b>: Enter the characters which you want to create large letter at the beginning of the line </li>
+							</ul>
+			<div><b>Note: </b>You can enter one piece of text then highlight piece of text you want to have large letter at the beginning of the line or highlight the first character of the later line and then click on the icon “Dropcap”.  
+					It will automatically generate start and end tags of Dropcap</div>
+							<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode-dropcap.png"/></div><br>
+
+	<h4 id="shortcode_countdown">Countdown</h4>
+				<div>Clock countdown shortcode is very useful for event presentation as a call to action message for customers to quickly decide to purchase tickets to your events.</div>
+				<div>Countdown shortcode is defined as follows</div>
+				<textarea cols="120">[u_countdown year="" month="" day="" hour="" minute="" bg_color="" num_color="" css_animation=""]</textarea>
+					<ol><li><b>year, month, day, hour, minute</b> - Time to count down. If hour and minute is not present, default value is 00:00
+							<ul><li>number</li></ul>
+						</li>
+						<li><b>show_second </b>- Show countdown for seconds. Default is 1/true
+							<ul><li>1/true - 0/false</li></ul>
+						</li>
+						<li><b>bg_color</b> - Color of background. Default theme color
+							<ul><li>#RGB</li></ul>
+						</li>
+						<li><b>num_color</b> - Color of number. Default white (#FFF)
+							<ul><li>#RGB</li></ul>
+						</li>
+						<li><b>css_animation</b> - Select types of animation for element to be animated when it "enters" the browsers viewport (Note: works only in modern browsers), with options: top-to-bottom, bottom-to-top, left-to-right, right-to-left, appear-from-center</li>
+						<div><b>Note</b>: Text below the number is translate-able string</div>
+							<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_Countdown.png"/></div>	
+						
+					</ol>
+
+			
+	
+	
+	<h4 id="shortcode_testimonials">Testimonials</h4>
+				<div>Testimonials shortcode is very useful to display interesting comments, endorsing for your upcoming events</div>
+				<div>Testimonials shortcode is defined as follows </div>			
+						
+				<textarea cols="120" rows="4">
+[u_testimonial scroll="0"]
+[u_testimonial_item name="name1" title="teacher1" avatar="3305"]enter text here[/u_testimonial_item]
+[u_testimonial_item name="name2" title="teacher2" avatar="3353"]content here[/u_testimonial_item]
+[/u_testimonial]
+				</textarea>
+				<ol><li><b>scroll</b> - auto scroll the testimonial slideshow or not - default is 0/false (0/false - 1/true)</li>
+	
+					<li><b>name</b> - Name of person
+						<ul><li>text</li></ul>
+					</li>
+					<li><b>title</b> - Title of person
+						<ul><li>text</li></ul>
+					</li>
+					<li><b>avatar</b> - ID of image
+						<ul><li>text</li></ul>
+					</li>
+				</ol>
+			<div><b>Note</b>: Need to register a thumbnail size for avatar</div>
+
+				
+				<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/Testimonials1.png"/></div>	
+	
+	
+	
+	<h4 id="shortcode_accordion">Accordion</h4>
+	
+				<div>Expand and collapse on click content Number of Accordion or Toggle</div>
+				<div>For example</div>
+	<textarea cols="120" rows="6">
+[vc_tta_accordion]
+
+[vc_tta_section i_position="right" i_icon_fontawesome="fa fa-anchor" title="Section 1" tab_id="1" add_icon="true"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/vc_tta_section]
+
+[vc_tta_section i_type="openiconic" i_icon_openiconic="vc-oi vc-oi-moon-inv" title="Section 2" tab_id="2" add_icon="true"]At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+
+[/vc_tta_section]
+
+[vc_tta_section i_type="typicons" i_icon_typicons="typcn typcn-arrow-right-thick" title="Section 3" tab_id="1452248794914-e9b777db-a266" add_icon="true"]
+
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+
+[/vc_tta_section]
+
+[vc_tta_section i_type="entypo" i_icon_entypo="entypo-icon entypo-icon-check" title="Section" tab_id="1452248868332-54b1dd95-0b52" add_icon="true"]
+
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+
+[/vc_tta_section]
+
+[vc_tta_section i_type="linecons" title="Section 5" tab_id="1452248910628-f99bac54-48c3" add_icon="true"][vc_column_text]At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+
+[/vc_tta_section]
+
+[/vc_tta_accordion]
+	</textarea><br>
+				<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_Accordions.png"/>	</div>
+	
+	<h4 id="shortcode_Tab">Tab</h4>			
+				<div><b>Tab: </b> Create tabs containing post’s content.</div>	
+<textarea cols="120" rows="6">
+[vc_tta_tabs]
+[vc_tta_section title="Tab 1" tab_id=""]Enter content here[/vc_tta_section]
+[vc_tta_section title="Tab 2" tab_id=""]Enter content here[/vc_tta_section]
+[/vc_tta_tabs]
+</textarea><br>
+				<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_tab.png"/></div><br>
+				<div class="clear"><!-- --></div>
+				
+	
+	<h4 id="shortcode_tour_section"> Tour Section</h4>
+	<textarea cols="120" rows="10">
+[vc_tta_tour]
+
+[vc_tta_section title="Section 1" tab_id="1"]Enter contetn here.[/vc_tta_section]
+
+[vc_tta_section title="Section 2" tab_id="2"]Enter contetn here.[/vc_tta_section]
+
+[vc_tta_section title="Section 3" tab_id="3"]Enter contetn here.[/vc_tta_section]
+
+[/vc_tta_tour]
+</textarea><br/>
+				<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_Tour.png"/></div>
+	
+	<h4 id="shortcode_course_list_table">Course List Table</h4>
+	<textarea cols="120" rows="4">
+[u_course_list count="" order="" orderby="" cat=""]
+				</textarea>
+	
+				<ul><li><b>cat</b> - ID or slug of course category</li>
+					<li><b>ids</b> - List of post IDs, separated by a comma. If this param is presented, "cats" params are useless<br>
+					<li><b>count</b> - Number of items</li>
+					<li><b>order</b> - Select ASC or DESC</li>
+					<li><b>orderby</b> - For options 
+						<ul>
+							<li>date: Order by publish date</li>
+							<li>meta_value_num: Order by Start date</li>
+							<li>upcoming: Order by start date - upcoming course</li>
+							<li>title: Order by title</li>
+							
+						</ul>
+					
+					</li>
+				</ul>
+
+					<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/shortcode_Course_List_Table.png"/></div>
+	
+	<h4 id="shortcode_adsense">Responsive Google Adsense</h4>
+	<textarea cols="120" rows="3">[adsense pub="" slot="" class=""]</textarea>
+	<p>This shortcode displays Google Adsense banner, which requires you to have a Google Adsense account. The ads is responsive, which means it will automatically change from a squared banner into a vertical banner in different screen size</p>	
+	<ul>
+		<li>
+			<b>pub</b> (required) - Google Adsense Publisher ID
+		</li>
+		<li>
+			<b>slot</b> (required) - Google Adsense Slot ID
+		</li>
+		<li>
+			<b>class</b> - Custom CSS Class
+		</li>
+	</ul>
+	<h4 id="shortcode_compare_table">Compare Table</h4>
+	<div>This shortcode help users to easily express the highlighted contents of the products accompanied by corresponding price of those products</div>
+	<div>Used with the structure as follows </div>
+	<textarea cols="120" rows="18">
+	[comparetable class="" id="" color=""]
+	[c_column class="" column="" color="" bg_color="" title=""]
+		[c_row class=""] content [/c_row]
+		[c_row class=""] [price price="FREE" price_text="FOREVER " currency=""] [/c_row]
+		[c_row class=""] content [/c_row]
+	[/c_column]
+	[c_column class="recommended" column="" color="" bg_color="" title="" recommended_text=""]
+		[c_row class=""] content [/c_row]
+		[c_row class=""] [price price="120" price_text="/MONTH" currency="$"] [/c_row]
+		[c_row class=""] content [/c_row]
+	[/c_column]
+	[c_column class="" column="" color="" bg_color="" title=""]
+		[c_row class=""] content [/c_row]
+		[c_row class=""] [price price="120" price_text="/MONTH" currency="$"] [/c_row]
+		[c_row class=""] content [/c_row]
+	[/c_column]
+[/comparetable]
+</textarea>
+			<div>The [comparetable] shortcode has the following variables/options:</div>
+				<ol><li><b>[comparetable]</b>
+							<ul><li><b>class (text)</b> - Custom CSS class</li>
+								<li><b>id</b> (text) - Custom ID. If it is not provided, random ID will be generated</li>
+								<li><b>color</b> (hexa color) - Main color of compare table</li>
+							</ul>
+					</li>	
+					<li><b>[c_column]</b>
+							<ul><li><b>class</b> (text) - Custom CSS class. Use "recommended" class to turn this column into special one</li>
+								<li><b>column</b> (number) - Number of columns in this compare table. It should match number of [c-columns] shortcode within [comparetable]</li>
+								<li><b>color</b> (hexa color) - Text color of column</li>
+								<li><b>bg_color</b> (hexa color) - Background color of column</li>
+								<li><b>title</b> (text) - Title of column</li>
+								<li><b>recommended_text</b> (text) - Text that appears in a recommended column</li>
+							</ul>
+					</li>
+					<li><b>[price]</b>
+							<ul><li><b>price</b> (number) - Price value. Can be text (ex: FREE)</li>
+								<li><b>price_text</b> (text) - Additional text after price value, ex: "per MONTH"</li>
+								<li><b>currency</b> (text) - Currency symbol, ex: "$"</li>
+							</ul>
+							<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/comparetable.jpg"/></div>
+					</li>
+				</ol>
+	<h4 id="shortcode_video_link">Video Link</h4>
+		<div>Display a banner that links to a video URL</div><br/>
+		<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/video_link_shortcode.jpg"/></div><br/>
+		<textarea cols="120" rows="4">[u-video-link image="" style="" width="" height="" text="" opacity="" video_url="" parallax="" target=""]</textarea>
+		<ol>
+			<li><b>image</b> (text) - ID of image (attachment) or URL of image</li>
+			<li><b>style</b> (select) - Select style for the banner
+				<ul>
+					<li><b>boxed</b> - Width and Height properties are used</li>
+					<li><b>fullwidth</b> - Width is 100% and Height property is used</li>
+				</ul>
+			</li>
+			<li><b>width</b> (number) - Width of banner in pixels, only work with "boxed" style</li>
+			<li><b>height</b> (number) - Height of banner in pixels</li>
+			<li><b>text</b> (text) - Text that appears on banner</li>
+			<li><b>opacity</b> (number) - Value of opacity layer, from 0 to 0.99</li>
+			<li><b>video_url</b> (URL) - URL of the video</li>
+			<li><b>parallax</b> (true/false) - Enable parallax effect </li>
+			<li><b>target</b> (select) - Action when clicking on banner
+				<ul>
+					<li><b>popup</b> - Open a popup video</li>
+					<li><b>current</b> - Open link in current tab</li>
+					<li><b>blank</b> - Open link in new tab</li>
+				</ul>
+			</li>
+		</ol>
+	<h4 id="shortcode_learndash_member">LearnDash Lecturers</h4>
+	<p>To list lecturers (U-Member) of a LearnDash course.</p>
+	<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/learndash-lecturers.jpg"/></div><br/>
+	<p>To add lecturers to a LearnDash Course, go to edit that course and choose from U-Members list</p>
+	<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/add_speaker_learndash.jpg"/></div><br/>
+	<textarea cols="120" rows="4">[learndash-lecturers id=""]</textarea>
+	<ol>
+		<li><b>id</b> - optional - ID of LearnDash Course. If ID is empty, current viewing LearnDash course will be used</li>
+	</ol>
+</section>
+<section id="Course">
+	<h3>U-Course plugin</h3><hr class="notop">
+	<p>
+	If you want to have Course custom post type, install <b>u-course</b> plugin. The installation file can be found in the <b>/Installation Files/</b> folder of the download package. After installed, you will see <b>U-Course</b> and <b>U-Course Settings</b> menu items in the left menu panel.
+	</p>
+	<h4 id="Course_create_a_course">Create a Course</h4>
+	<ol>
+		<li>Go to <b>U-Course > Add New Course</b></li>
+		<li>Enter course title, description and other information<br/><br/>
+			<div class="full">
+				<img alt="" src="assets/img/loading.gif" data-src="assets/images/course_single.png"/>
+			</div>
+			<ul>
+				<li><b>Layout settings</b><br/><br/>
+					<table class="table-info">
+						<tr><td><b>Sidebar</b></td><td>Select "Default" to use settings in <b>U-Course Settings</b> page. If you do not choose “Default”, page will be formatted with “Left” sidebar , “Right” sidebar or no sidebar (“Hidden“)</td></tr>
+						<tr><td><b>Content padding</b></td><td>Enable default top and bottom margin</td></tr>
+						<tfoot><td colspan="2"></td></tfoot>
+					</table>
+				</li>
+				<li><b>Course information </b><br><br/>
+					<table class="table-info">
+						<tr>
+							<td><b>Start Date</b></td>
+							<td>Course start date</td>
+						</tr>
+						<tr><td><b>Course ID</b></td><td>Course’s ID. It should be unique</td></tr>
+                        <tr><td><b>Product</b></td><td>Select a WooCommerce product to sell this course. It requires <b>WooCommerce plugin</b> to be installed and there are some products to choose. See <a href="#woocommerce">WooCommerce</a> section to learn more about creating products.</td></tr>
+						<tr><td><b>Address</b></td><td>Location Address of course</td></tr>
+						<tr><td><b>Duration</b></td><td>Course duration information. For example: one week, two weeks</td></tr>
+						<tr><td><b>Speakers</b></td><td>Choose from members. It requires <b>U-Member plugin</b> to be installed and there are some members to choose. See <a href="#member">U-Member plugin</a> to learn more about managing members</td></tr>
+						<tr><td><b>Credit</b></td><td>Enter the number of credits need to learn in the registration course</td></tr>
+						<tr><td><b>Subscribe URL</b></td><td>Create a link to a subscribe form. If it is empty, button is invisible</td></tr>
+						<tr><td><b>Subscribe Button Text</b></td><td>Text that appears on the subscribe button</td></tr>
+						<tr><td><b>Download Button URL</b></td><td>Enter URL which allows user to download course’s document, If it is empty, button is invisible</td></tr>
+						<tr><td><b>Download Button Text</b></td><td>The name of button “download” (Text that appears on download button)</td></tr>
+						<tr><td><b>Call to Action</b></td><td>Text that appears before Subscribe Button</td></tr>
+						<tfoot><td colspan="2"></td></tfoot>
+					</table>
+				</li>
+				<li><b>Excerpt</b>: The brief introduction about course<br><br/></li>
+			</ul>
+		</li>
+		<li>U-Course supports categories (U-Course Categories)</li>
+	</ol>
+<h4 id="Course_course_setting_page">U-Course settings page </h4>
+	Go to <b>U-Course Settings</b> from menu in the left
+	<ol>
+		<li><b>General</b> 
+            <ul> <li><b>Courses slug:</b> Change course's slug. Remember to save the permalink settings again in <b>Settings > Permalinks</b>. By default, a course will have URL like this <i>http://yourdomain.com/<b>course</b>/a-single-course-slug</i>. If you enter <b>program</b> here, URL of course will be like this <i>http://yourdomain.com/<b>program</b>/a-single-course-slug</i>. <br/><br/>In addition, the courses listing page will be <i>http://yourdomain.com/<b>program</b></i> instead of <i>http://yourdomain.com/<b>course</b></i><br/><br/></li></br>
+            <li><b>Course Categories Slug:</b> Change course categories slug. Remember to save the permalink settings again in Settings > Permalinks</li></br>
+            <li><b>Posts Per Page:</b> Number of courses per page (in Courses Listing page). If not set, it is the value set in <b>Settings > Reading > Blog pages show at most</b></li></br>
+            <li><b>Filter bar:</b> Enable filter bar</li></br>
+            <li><b>Course Listing Order:</b> Select one of three options for sorting according 
+            	<ul>
+                	<li>Upcoming: Course listing order by upcoming</li>
+                    <li>Start Date: Course listing order by start date (DESC)</li>
+                    <li>Modified Date: Course listing order by modified date(DESC)</li>
+                </ul>
+            </li></br>
+            <li><b>Course Listing Order Bar:</b> Enable course listing order bar</li></br>
+            <li><b>Show Price:</b> Show Price of Course listing</li></br>
+        </ul>
+        </li>
+		<li><b>Single Course</b>
+            <ul>
+             <li><b>Sidebar:</b> Choose default layout for Single Course pages (Right, Left or Hidden-FullWidth). This setting can be overridden in each course<br/><br/>
+		</li>
+		<li><b>Related Courses > Number of items:</b> Enter number of Courses displayed in the Related Courses section (in a Single Course page)</li>
+       </ul>
+       </li>
+	</ol>
+<h4 id="Course_course_listing_page">Courses Listing page</h4>
+	URL of Courses Listing page will be defined in <b>U-Course Settings > General > Courses slug</b>. By default, the Courses Listing page will be <i>http://yourdomain.com/<b>course</b></i>. Changing the value of <b>Courses slug</b> will change the URL of Courses Listing page accordingly.
+	<br/><br/>
+	So to create a menu item that link to Courses Listing page, use a <b>Links</b> menu item and enter URL of Courses Listing page into <b>URL</b> textfield
+	<h4 id="Course_selling_a_course">Selling a Course</h4>
+	To sell an Course, <b>WooCommerce plugin</b> must be installed. See <a href="#woocommerce">WooCommerce</a> section for more information.
+			<ol>
+					<li>First, you create a product in WooCommerce</li>
+					<li>Create/Edit an Course</li>
+					<li>Search and choose a Product for that course</li>
+			</ol>
+	<br/><br/><br/><br/><br/><br/><br/>
+</section>
+<section id="Event">
+<h3>U-Event plugin</h3><hr class="notop">
+<div>
+If you want to have Event custom post type, install <b>u-event</b> plugin. The installation file can be found in the <b>/Installation Files/</b> folder of the download package. After installed, you will see <b>U-Event</b> and <b>U-Event Settings</b> menu items in the left menu panel.
+</div>
+<h4 id="Event_create_a_event">Create an Event</h4>
+<ol>
+	<li>Go to <b>U-Course > Add New Event</b></li>
+	<li>Enter event title, description and other information<br>
+	<div class="full">
+				<img alt="" src="assets/img/loading.gif" data-src="assets/images/event_single.png"/>
+			</div>
+		<ul>
+			<li><b>Layout settings</b><br/><br/>
+				<table class="table-info">
+					<tr><td><b>Sidebar</b></td><td>Select "Default" to use settings in <b>U-Course Settings</b> page. If you do not choose “Default”, page will be formatted with “Left” sidebar , “Right” sidebar or no sidebar (“Hidden“)</td></tr>
+					<tr><td><b>Content padding</b></td><td>Enable default top and bottom margin</td></tr>
+					<tfoot><td colspan="2"></td></tfoot>
+				</table>
+			</li>
+			<li><b>Event Info</b><br/><br/>
+				<table class="table-info">
+					<tr><td><b>Start Date</b></td><td>Event Start Date & Time</td></tr>
+					<tr><td><b>End date</b></td><td>Event End Date & Time</td></tr>
+					<tr><td><b>Event ID</b></td><td>Event ID. It should be unique</td></tr>
+					<tr><td><b>Product</b></td><td>Select a WooCommerce product to sell this event. It requires <b>WooCommerce plugin</b> to be installed and there are some products to choose. See <a href="#woocommerce">WooCommerce</a> section to learn more about creating products. It is optional to link a product to an event. If you do not to use WooCommerce, just enter <b>Subscribe URL</b> for visitors to subscribe the events</td></tr>
+					<tr><td><b>Speakers</b></td><td>Choose from members. It requires <b>U-Member plugin</b> to be installed and there are some members to choose. See <a href="#member">U-Member plugin</a> to learn more about managing members</td></tr>
+					<tr><td><b>Call to action</b></td><td>Text that appears before Subscribe Button</td></tr>
+					<tr><td><b>Subscribe URL</b></td><td>Link to a subscribe form. Only work if no product is set.</td></tr>
+					<tr><td><b>Subscribe Button Text</b></td><td>Text that appears on the subscribe button</td></tr>
+					<tfoot><td colspan="2"></td></tfoot>
+				</table>
+			</li>
+			<li><b>Event Location</b><br/><br/>
+				<table class="table-info">
+					<tr><td><b>Address</b></td><td>Enter Location Address of event</td></tr>
+					<tr><td><b>Phone</b></td><td>Enter Contact Number of event</td></tr>
+					<tr><td><b>Website</b></td><td>Enter Website URL of event</td></tr>
+					<tr><td><b>Email</b></td><td>Enter Email Contact of event</td></tr>
+					<tfoot><td colspan="2"></td></tfoot>
+				</table>					
+			</li>
+			<li><b>Excerpt</b><br><br/>The brief introduction about event<br><br/></li>
+		</ul>
+	</li>
+	<li>U-Event supports tags (U-Event Tags) and categories (U-Event Categories)</li>
+</ol>
+<h4 id="Event_event_setting_page">U-Event Settings Page</h4>
+Go to <b>U-Event Settings</b> on the left of menu
+<ol>
+	<li><b>General </b>
+    <ul>
+        <li><b> Events Slug:</b> Change event's slug. Remember to save the permalink settings again in <b>Settings > Permalinks</b>. By default, an event will have URL like this <i>http://yourdomain.com/<b>event</b>/a-single-event-slug</i>. If you enter <b>program</b> here, URL of event will be like this <i>http://yourdomain.com/<b>program</b>/a-single-event-slug</i>. <br/><br/>In addition, the events listing page will be <i>http://yourdomain.com/<b>program</b></i> instead of <i>http://yourdomain.com/<b>event</b></i><br/><br/></li>
+        <li><b>Listing Style:</b> Select style for Events Listing page. It can be either "Classic" or "Grid"</li><br/>
+        <li><b>Posts Per Page:</b> The number of events per page (in Events Listing page). If it is not set, it is the value set in <b>Settings > Reading > Blog Pages Show At Most</b></li><br/>
+        <li><b>Filter bar:</b> Enable ON or OFF filter bar </li><br/>
+       <li><b>Event Listing Order:</b> Select one of three options for sorting according 
+            	<ul>
+                	<li>Upcoming: Event listing order by upcoming</li>
+                    <li>Start Date: Event listing order by start date (DESC)</li>
+                    <li>Modified Date: Event listing order by modified date(DESC)</li>
+                </ul>
+                <div><i><b>Note: The above selection is used for both Event Listing and Event's Category Listing page</b></i></div>
+            </li></br>
+        <li><b>Event Listing Order Bar:</b> Enable or Disable to display the box, select one of three options for sorting according to Upcoming | Start Date | Modified Date in event listing page </li><br/>
+	</ul>
+    </li>
+	<li><b>Single Event</b>
+    <ul>
+		<li><b>Sidebar</b> Choose default layout for Single Event pages (Right, Left or Hidden-FullWidth). This setting can be overridden in each event<br/><br/>
+	</li>
+	<li>
+		<b>Header Style:</b> Choose default style for header of Single Event pages (Right, Left or Hidden-FullWidth). This setting can be overridden in each event<br/><br/>
+        </li>
+        <li><b>Related Events > Related by:</b> Get related events by same categories or same tags
+        </li><br/>
+        <li><b>Related Events > Number of items:</b> Enter the number of Events displayed in the Related Events section (in a Single Event page)
+        </li><br/>
+        <li><b>Categories:</b> Enable to display Categories info (in a Single Event page)
+        </li><br/>	
+        <li><b> Tags:</b> Enable to display Tags info (in a Single Event page)
+        </li><br/>	
+    </ul>
+    </li>
+</ol>
+<h4 id="Event_event_listing_page">Events Listing page</h4>
+URL of Events Listing page will be defined in <b>U-Event Settings > General > Events Slug</b>. By default, the Events Listing page will be <i>http://yourdomain.com/<b>event</b></i>. Changing the value of <b>Events slug</b> will change the URL of Events Listing page accordingly.
+<br/><br/>
+So to create a menu item that link to Events Listing page, use a <b>Links</b> menu item and enter URL of Events Listing page into <b>URL</b> textfield
+<h4 id="Event_selling_a_event">Selling an Event</h4>
+To sell an Event, <b>WooCommerce plugin</b> must be installed. See <a href="#woocommerce">WooCommerce</a> section for more information.
+<ol>
+	<li>First, you create a product in WooCommerce</li>
+	<li>Create/Edit an Event</li>
+	<li>Search and choose a Product for that event</li>
+</ol>
+</section>
+<section id="Member">
+<h3>U-Member plugin</h3><hr class="notop">
+<div>
+If you want to have Member custom post type, install <b>u-member</b> plugin. The installation file can be found in the <b>/Installation Files/</b> folder of the download package. After installed, you will see <b>U-Member</b> and <b>U-Member Settings</b> menu items in the left menu panel. <b>U-Member plugin</b> can be used independently or collaboratively with <b>U-Event plugin</b> and <b>U-Course plugin</b>. It provides <b>Speakers</b> data for Courses and Events.
+</div>
+<h4 id="Member_add_a_member">Add a Member</h4>
+<ol>
+	<li>Go to <b>U-Member > Add New Member</b></li>
+	<li>Enter Member Title, Description and other information<br/><br/>
+		<div class="full">
+			<img alt="" src="assets/img/loading.gif" data-src="assets/images/Single_Member.png"/>
+		</div>
+		<ul>
+			<li>
+				<b>Layout settings</b><br/><br/>
+				<table class="table-info">
+					<tr><td><b>Sidebar</b></td><td>Select "Default" to use settings in <b>U-Member Settings</b> page. If you do not choose “Default”, page will be formatted with “Left” sidebar , “Right” sidebar or no sidebar (“Hidden“)</td></tr>
+					<tr><td><b>Content padding</b></td><td>Enable default top and bottom margin</td></tr>
+					<tfoot><td colspan="2"></td></tfoot>
+				</table>
+			</li>
+			<li>
+				<b>Member Info</b><br/><br/>
+				<table class="table-info">
+					<tr><td><b>Position</b></td><td>Position/Title of member</td></tr>
+					<tr><td><b>Facebook</b></td><td>Enter full link to member Facebook profile page</td></tr>
+					<tr><td><b>Instagram</b></td><td>Enter full link to member Instagram profile page</td></tr>
+					<tr><td><b>Email</b></td><td>Enter full link to member Email profile page</td></tr>
+					<tr><td><b>Twitter</b></td><td>Enter full link to member Twitter profile page</td></tr>
+					<tr><td><b>LinkedIn</b></td><td>Enter full link to member LinkedIn profile page</td></tr>
+					<tr><td><b>Tumblr</b></td><td>Enter full link to member Tumblr profile page</td></tr>
+					<tr><td><b>Google Plus</b></td><td>Enter full link to member Google Plus profile page</td></tr>
+					<tr><td><b>Pinterest</b></td><td>Enter full link to member Pinterest profile page</td></tr>
+					<tr><td><b>YouTube</b></td><td>Enter full link to member YouTube profile page</td></tr>
+					<tr><td><b>Flickr</b></td><td>Enter full link to member Flickr profile page</td></tr>
+					<tr><td><b>GitHub</b></td><td>Enter full link to member GitHub profile page</td></tr>
+					<tr><td><b>Dribbble</b></td><td>Enter full link to member Dribbble profile page</td></tr>
+				</table>
+			</li>
+			<li><b>Excerpt:</b> the brief introduction about Member</li>
+		</ul>
+	</li>
+	<li><b>U-Member</b> supports Department (U-Department)</li>
+	
+</ol>
+<h4 id="Member_member_setting_page">Member Setting Page</h4>
+Go to <b>U-Member Settings</b> from menu in the left
+	<ul>
+		<li><b>General</b><br/>
+		
+			<table class="table-info">
+					<tr><td><b>Members Slug</b></td><td>Change member's slug. Remember to save the permalink settings again in <b>Settings > Permalinks</b>. By default, a member will have URL like this <i>http://yourdomain.com/<b>member</b>/a-single-member-slug</i>. If you enter <b>speaker</b> here, URL of member will be like this <i>http://yourdomain.com/<b>speaker</b>/a-single-member-slug</i>. In addition, the members listing page will be <i>http://yourdomain.com/<b>speaker</b></i> instead of <i>http://yourdomain.com/<b>member</b></i></td></tr>
+					<tr><td><b>Members Department Slug</b></td><td>Change department's slug. Remember to save the permalink settings again in <b>Settings > Permalinks</b></td></tr>
+					<tr><td><b>Filter bar</b></td><td>Enable <b>ON/OFF</b> filter bar</td></tr>
+					<tr><td><b>Member Listing Order</b></td><td>Members are allowed to sort by <b>"Modified Date"</b> (It  means that it is the date when Member is edited- Newly edited Member will be shown at the first position in Member List) or by <b>"Alphabetically"</b></td></tr>
+			</table>
+		</li>
+		<li>
+			<b>Single Member > Sidebar</b><br/><br/>
+			Choose default layout for Single Member pages (Right, Left or Hidden-FullWidth). This setting can be overridden in each member<br/><br/>
+		</li>
+	</ul>
+<h4 id="Member_member_listing_page">Members Listing page</h4>
+<p>URL of Members Listing page will be defined in <b>U-Member Settings > General > Members Slug</b>. By default, the Members Listing page will be <i>http://yourdomain.com/<b>member</b></i>. Changing the value of <b>Members slug</b> will change the URL of Members Listing page accordingly.
+<br/><br/></p>
+<p>So to create a menu item that link to Members Listing page, use a <b>Links</b> menu item and enter URL of Members Listing page into <b>URL</b> textfield</p>
+<h4 id="Member_shortcodes">Members Shortcode</h4>
+<p>To list all members</p>
+<p><b>Screenshot</b></p>
+<div class="full">
+			<img alt="" src="assets/img/loading.gif" data-src="assets/images/member-shortcode.jpg"/>
+		</div>
+<p><b>The Code</b></p>
+<textarea cols="200">[member ids='' col='' link='' department='' count='' order='' orderby='' meta_key='']</textarea>
+<p><b>Parameters</b></p>
+<ul>
+<li><b>ids</b> - int/string - List of member IDs, separated by a comma</li>
+<li><b>col</b> - int - Size of each item. Possible values are from 1 to 12. Make sure the total values of all items in one row is 12</li>
+<li><b>link</b> - select - Set to "no" if you don't want to put link (to the single member page) on each item, or leave it empty</li>
+<li><b>department</b> - string - (optional) List of IDs or Slugs of U-Department, separated by a comma. It is used to query members in a department</li>
+<li><b>count</b> - int - number of items to display</li>
+<li><b>order</b> - ASC/DESC - order items ascending or descending</li>
+<li><b>orderby</b> - select - condition to order items. Please check <a href="https://codex.wordpress.org/Class_Reference/WP_Query"> https://codex.wordpress.org/Class_Reference/WP_Query </a> for a list of <b>orderby</b> values</li>
+<li><b>meta_key</b> - string - if <b>orderby</b> is <b>meta_value</b> or <b>meta_value_num</b>, this parameter specifies the name of the meta data</li>
+</ul>
+</section>
+
+<section id="project">
+<h3>U-Project plugin</h3><hr class="notop">
+<div>
+If you want to have Project custom post type, install <b>u-project</b> plugin. The installation file can be found in the <b>/Installation Files/</b> folder of the download package. After installed, you will see <b>U-Project</b> and <b>U-Project Settings</b> menu items in the left menu panel.</div>
+<h4 id="project_add_a_project">Add a Project</h4>
+<ol>
+	<li>Go to <b>U-Project > Add New Project</b></li>
+	<li>Enter Project Title, Description and other information<br/><br/>
+		<div class="full">
+			<img alt="" src="assets/img/loading.gif" data-src="assets/images/Single_Project.png"/>
+		</div>
+		<ul>
+			<li><b>Layout settings</b><br/><br/>
+				<table class="table-info">
+					<tr><td><b>Sidebar</b></td><td>Select "Default" to use settings in <b>U-Project Settings</b> page. If you do not choose “Default”, page will be formatted with “Left” sidebar , “Right” sidebar or no sidebar (“Hidden“)</td></tr>
+					<tr><td><b>Content padding</b></td><td>Enable default top and bottom margin</td></tr>
+					<tfoot><td colspan="2"></td></tfoot>
+				</table>
+			</li>
+			<li><b>Metadata</b>: Metadata is set in U-Project Settings > Default Metadata. You can also add new metadata here<br/>
+				<div class="full">
+			<img alt="" src="assets/img/loading.gif" data-src="assets/images/project_metadata.png"/>
+		</div>
+			</li>
+			<li><b>Excerpt:</b> the brief introduction about Project</li>
+		</ul>
+	</li>
+	<li><b>U-Project</b> supports Categories (U-Project Categories)</li>
+	
+</ol>
+<h4 id="project_project_setting_page">Project Setting Page</h4>
+Go to <b>U-Project Settings</b> from menu in the left
+	<ul>
+		<li><b>General > Project Slug</b><br/><br/>Change project slug. Remember to save the permalink settings again in <b>Settings > Permalinks</b>. By default, a project will have URL like this <i>http://yourdomain.com/<b>project</b>/a-single-project-slug</i>. If you enter for example enter is <b>book</b> here, URL of project will be like this <i>http://yourdomain.com/<b>book</b>/a-single-project-slug</i>. <br/><br/>In addition, the projects listing page will be <i>http://yourdomain.com/<b>book</b></i> instead of <i>http://yourdomain.com/<b>project</b></i><br/><br/></li>
+		<li><b>General > Default Metadata</b><br/><br/>Define default metadata for all projects, ex: Client, Services...<br/><br/></li>
+		<li><b>General > Default Filter bar</b><br/><br/>Enable or Desable filter bar<br/>
+		<div class="full">
+			<img alt="" src="assets/img/loading.gif" data-src="assets/images/filterbar.png"/>
+		</div>
+		</li>
+		<li>
+			<b>Single Project > Sidebar</b><br/><br/>
+			Choose default layout for Single Project pages (Right, Left or Hidden-FullWidth). This setting can be overridden in each project<br/><br/>
+		</li>
+		<li>
+			<b>Single Project > Related Project</b> (Related display in Project Single page)<br/><br/>
+			Option display number of items in Related Project<br/><br/>
+				<div class="full">
+			<img alt="" src="assets/img/loading.gif" data-src="assets/images/related_project.png"/>
+		</div>
+		</li>
+		<li>
+			<b>Single Project > Project navigation</b><br/><br/>
+			Choose which project to navigate when in a single project page<br/><br/>
+		</li>
+			
+	</ul>
+<h4 id="project_project_listing_page">Projects Listing page</h4>
+URL of Projects Listing page will be defined in <b>U-Project Settings > General > Projects Slug</b>. By default, the Projects Listing page will be <i>http://yourdomain.com/<b>project</b></i>. Changing the value of <b>Projects slug</b> will change the URL of Projects Listing page accordingly.
+<br/><br/>
+So to create a menu item that link to Project Listing page, use a <b>Links</b> menu item and enter URL of Projects Listing page into <b>URL</b> textfield
+</section>
+
+
+
+
+<section id="woocommerce">
+	<h3>WooCommerce</h3><hr class="notop">
+
+		<h5>Install WooCommerce</h5>
+		<ol>
+			<li>Go to <b>Plugins > Add New</b></li>
+			<li>Type <b>woocommerce</b> in the search box and click <b>"Search Plugins"</b> or press Enter</li>
+			<li>Install and activate the first result <b>"WooCommerce - excelling eCommerce"</b></li>
+			<li>Install WooCommerce Pages for the first time, click <b>Install WooCommerce Pages</b>
+			<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/woocommerce-1.jpg"/></div>
+			</li>
+			<li>Go to <b>WooCommerce > Settings > Products > Product Listings > Product Archive / Shop Page</b>: choose a page to appoint it to be a Shop page</li>
+		</ol>
+		<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/products.png"/></div>
+		<h5>Create a product</h5>
+		<ol>
+			<li>Go to <b>Product > Add Product</b></li>
+			<li>Enter Product's title, description and other information</li>
+			<ul>
+			<li>
+				<b>Layout settings</b><br/><br/>
+				<table class="table-info">
+					<tr><td><b>Sidebar</b></td><td>Select "Default" to use settings in <b>Theme Options</b> page. If you do not choose “Default”, page will be formatted with “Left” sidebar , “Right” sidebar or no sidebar (“Hidden“)</td></tr>
+					<tr><td><b>Content padding</b></td><td>Enable default top and bottom padding for content (30px)</td></tr>
+					<tfoot><td colspan="2"></td></tfoot>
+				</table>
+			</li>
+			
+			<li><b>Product Data</b><br/><br/>
+			<div>Manage and configure Product. When the product is added, let's specify carefully types of product needing to be added here. There are two options to add the product</div>
+				<ul><li><b>Simple product</b>: the type of Simple product covers the vast majority of any products you may sell. Simple products are shipped and have no options. For settings in General:
+								<ul><li><b>SKU</b> – Used to track products. Must be unique and should be named so it does not clash with post ID’s.</li>
+									<li><b>Price</b>:
+										<ul><li>Regular Price – The item’s main price.</li>
+											<li>Sale Price – The item’s sale price.</li>
+										</ul>
+									</li>
+								</ul>
+								
+					</li>
+					<li><b>Variable product</b>: Is the product that has different variations in each SKU (code). For example: a tshirt available in several different colors and/or sizes. Just need to set in:
+						<ul><li>Attributes: Enter name Product and Value(s), then Save attributes </li>
+							<li>Variations: After product is created in Attributes, then enter price for Values you have created in Attributes here</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			</ul>
+				</ol>
+			
+</section>
+
+
+<section id="page_post">
+<h3>Pages & Posts</h3><hr class="notop">
+		<div class="box_code">Before reading next, see the document about <b>Visual Composer & Shortcode</b> to learn how to use <b>Rows & Columns</b> to build page!</div>
+		<div>Although common settings for Pages can be done in <b>Appearance > Theme Options > Single Page & Single Post</b>, each page/post can have its specific settings.</div>
+		
+	<h5>Layout Settings</h5>
+		
+				<div>Both Posts and Pages have this settings box. There are 2 options</div>
+				<ul>
+					<li><b>Sidebar</b> : Select "Default" to use settings in <b>Theme Options > Single Page</b> for Pages or <b>Theme Options > Single Post</b> for Posts or Front page fullwidth</li>
+					<li><b>Content Padding</b>: Enable default top and bottom padding for content (30px)</li>
+				</ul>
+			
+	<h5>Front Page Header Settings</h5>
+				<div><b>Front Page Header Settings</b>: this setting is only effective when Page <b>Template</b> is <b>Front Page</b>. See <a href="#page_setup_homepage">Frontpage Templates</a> for detail</div>
+	<h5>Gallery Post</h5><hr class="notop">
+			<ol>
+				<li>Go to <b>Posts > Add New</b></li>
+				<li>Choose <b>Gallery</b> in <b>Format</b><br/>
+					<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/format_gallery.png"/></div><br>
+				</li>
+				<li>Click <b>Add Media > Create Gallery > Upload Files > Select files</b> > choose image from your computer to upload and click <b>Create a new gallery</b>, continue uploading some images to create a Gallery album<br/>
+					<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/create_gallery.png"/></div><br>
+					<div class="full"><img alt="" src="assets/img/loading.gif" data-src="assets/images/create_a_gallery.png"/></div><br>
+				</li>
+				<li>Click <b>Insert Gallery</b><br>
+					<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/insert_gallery.png"/></div>
+				</li>
+				<li>Enter necessary information such as<b>Title, Categories</b> and <b>tags</b>,etc...then click Publish to save<br>
+					<div class="full"> <img alt="" src="assets/img/loading.gif" data-src="assets/images/gallery_post.png"/></div><br>
+				</li>
+			</ol>
+
+</section>
+<section id="translation">
+<h3>RTL & Translation</h3><hr class="notop">
+<div>University is a WMPL compatible and multi-language ready theme. To translate this theme:
+	<ul>
+		<li>Download and install this tool <a href="http://www.poedit.net/">POEdit</a></li>
+		<li>Open POEdit and load <b>[/university/languages/university.po]</b></li>
+		<li>Translate the text and save the file</li>
+		<li>A file named <b>university.mo</b> is created. Rename it with Code Name of your language. For example, <b>de_DE.mo</b> for German - Deutsche. See language code list here <a href="http://codex.wordpress.org/WordPress_in_Your_Language" target="_blank">http://codex.wordpress.org/WordPress_in_Your_Language</a></li>
+		<li>(For WordPress 3.x)Open <b>[{wordpress root}/wp_config.php]</b> and find this line <b>define('WPLANG', '');</b>. Change it with your language code, for example <b>define('WPLANG', 'de_DE');</b></li>
+		<li>(For WordPress 4.x) Go to <b>Settings > General</b> and change your site language</li>
+	</ul>
+</div>
+<div><b>Refer video here:</b></div>
+<div class="full">
+<iframe width="660" height="515" src="https://www.youtube.com/embed/jwc0uLbvb7c?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+<div>University also supports <b>RTL - Right To Left</b> languages. If your language is RTL, go to <b>Appearance &gt; Theme Options &gt; General &gt; RTL mode</b> and check <b>Enable RTL</b></div>
+
+</section>
+
+<section id="childtheme">
+<h3>Using child theme</h3>
+<h4 id="childtheme_translate">Translate Child Theme</h4>
+<div>To internationalize a child theme follow these steps</div>
+<ol>
+<li>Add a languages directory in Child Theme<br>
+<p>Something like: <i>university-child/languages/</i></p>
+</li>
+<li>Add language files.<br>
+<p>Your filenames have to be <i>de-DE.po and de-DE.mo</i> (depending on your language)</p>
+</li>
+<li> Add this code in <b>university-child/functions.php</b> file<br/><br/>
+<textarea cols="120" rows="7">
+<?php
+add_action( 'after_setup_theme', 'cactusthemes_child_setup' );
+function cactusthemes_child_setup() {
+load_child_theme_textdomain( 'cactusthemes', get_stylesheet_directory() . '/languages' );
+}
+?>
+</textarea>
+
+</li>
+
+</ol>
+
+<h4 id="childtheme_js">Add .JS files to Child Theme</h4>
+<div>Load a Script from a Child Theme without dependencies</div>
+<ol>
+<li>Add a js directory in Child Theme<br>
+<p>Something like: <i><b>university-child/js/</b></i></p>
+</li>
+<li>Add js files.<br>
+<p>For example: <b><i>university-child/js/cactus-themes.js</i></b></p>
+</li>
+<li> Add the code segment with the structure as follows in <b><i>university-child/functions.php</i></b> file to load a Script from a Child Theme<br/><br/>
+
+<textarea cols="120" rows="12">
+<?php
+add_action( 'wp_enqueue_scripts', 'cactusthemes_child_add_scripts' );
+
+/**
+ * Register and enqueue a script that does not depend on a JavaScript library.
+ */
+function cactusthemes_child_add_scripts() {
+    wp_register_script(
+        'cactusthemes-child',
+        get_stylesheet_directory_uri() . '/js/cactus-themes.js',
+        false,
+        '1.0',
+        true
+    );
+
+    wp_enqueue_script( 'cactusthemes-child' );
+}
+?>
+</textarea>
+</li>
+
+</ol>
+
+</section>
+<section id="support">
+<h3>Licenses</h3><hr class="notop">
+<ul>
+	<li>BootStrap (Apache License v2.0) - http://twitter.github.io/bootstrap/</li>
+	<li>Font Awesome (GPL License) by Dave Gandy - http://fontawesome.io</li>
+	<li>The Final Countdown for jQuery (MIT License) by Edson Hilios (http://hilios.github.io/jQuery.countdown/)</li>
+	<li>OwlCarousel (MIT License) by Bartosz Wojciechowski (http://www.owlgraphic.com/owlcarousel/)</li>
+	<li>jQuery lightbox and modal window plugin (MIT License) by Jack Moore (http://www.jacklmoore.com/colorbox)</li>
+	<li>OptionTree (GNU License) by Derek Herman (https://github.com/valendesigns/option-tree/)</li>
+	<li>Fontastic (MIT License) - http://fontastic.me/</li>
+	<li>Mobile Detect (MIT License) by Serban Ghita and Victor Stanciu - http://mobiledetect.net</li>
+	<li>TGM-Plugin-Activation (GPL V2 License) by Thomas Griffin and Gary Jones - https://github.com/thomasgriffin/TGM-Plugin-Activation</li>
+	<li>Envato Protected API by Derek Herman &lt;derek@envato.com&gt;</li>
+	<li>WordPress Importer (GPL V2 License) by wordpressdotorg - http://wordpress.org/extend/plugins/wordpress-importer/</li>
+</ul>
+
+<div>The list might not be complete by accident. Authors who think you owe a license in this theme, please contact us at admin@cactusthemes.com</div>
+
+
+<h4>Support</h4>
+<p>
+	If you face problems with the installation or customization of our product please do not hesitate to contact us via our support ticket system:</p>
+<p>
+	<strong><a href="http://ticket.cactusthemes.com//">http://ticket.cactusthemes.com/</a></strong></p>
+</section>
+	</div>
+</body>
+</html>

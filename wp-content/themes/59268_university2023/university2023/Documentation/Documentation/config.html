@@ -1,0 +1,386 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Sample Configuration - University Wordpress Theme</title>
+	
+	
+	<meta name="description" content="For support please checkout http://www.cactusthemes.com">
+	<meta name="author" content="CactusThemes.com">
+	<meta name="copyright" content="CactusThemes.com">
+	<meta name="date" content="2014-07-26T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/jquery.unveil.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.scrollTo-1.4.7.min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="assets/css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();jQuery(document).ready(function() {
+		  jQuery("img").unveil();
+		});</script>
+
+	<script>document.createElement('section');var duration=913,easing='easeOutQuart';</script>
+	<style type="text/css" media="screen">
+		.accordion-heading .accordion-toggle{font-weight:bold}
+	</style>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#A8A7A7;color:#363636;background-image:url(assets/images/image_1.gif);background-repeat:repeat;background-attachment:scroll;}
+		::-moz-selection{background:#404040;color:#B50D0D;}
+		::selection{background:#404040;color:#B50D0D;}
+		#documenter_sidebar #documenter_logo{
+		background-image:url(assets/images/logo.jpg);
+		}
+		a{color:#0F2AB8;}
+		hr{border-top:1px solid #858484;border-bottom:1px solid #CFCDCD; border-left:10px;border-right:10px}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#ffffff;color:#e8e8e8;}		
+		#documenter_sidebar ul a{color:#000;}
+		#documenter_sidebar ul a:hover{background:#e8e8e8;color:#000000;}
+		#documenter_sidebar ul a.current{background:#18376e;color:#ffffff;border-top:1px solid #18376e;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+		.bigfont{font-size:1.5em}
+	</style>
+	 <script>
+		$(function() {
+		$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+		$( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+		});
+		</script>
+		<style>
+		.ui-tabs-vertical { width: 100%; }
+		.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+		.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+		.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+		.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+		.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 59em;}
+		.ui-tabs-vertical .ui-tabs-panel img{max-width:100%}
+		</style>
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current section" href="#documenter_cover">First to know</a></li>
+			<li><a href="#layout" class="section">Layout</a></li>
+			<li>
+				<a href="#homepage" class="section">Home Page</a>
+				<ol>
+					<li><a href="#homepage_layout">1. Homepage layout</a></li>
+					<li><a href="#homepage_assign">2. Assign a homepage</a></li>
+					<li><a href="#homepage_header">3. Configure header</a></li>
+					<li><a href="#homepage_sample_code">4. Sample homepage code</a></li>
+					<li><a href="#homepage_shortcodes">5. Add shortcode elements</a></li>
+					<li><a href="#homepage_menu">6. Configure Navigation</a></li>
+					<li><a href="#homepage_logo">7. Change logo</a></li>
+					<li><a href="#homepage_searchbox">8.Turn on Search box</a></li>
+					<li><a href="#homepage_top_icons">9. Configure top social icons</a></li>
+					<li><a href="#homepage_footer">10. Configure footer widgets</a></li>
+					<li><a href="#homepage_social_links">11. Add social links</a></li>
+				</ol>
+			</li>
+			<li><a href="#configure_revolution" class="section">Header With Revolution Slider</a>
+				<ol>
+					<li><a href="#configure_revolution_button">1. Revolution with buttons</a></li>
+					<li><a href="#configure_revolution_custom">2. Custom Revolution Slider</a></li>
+				</ol>
+			<li><a href="#contact" class="section">Contact Pages</a>
+				<ol>
+					<li><a href="#contact_contactform">Create a contact form 7</a></li>
+					<li><a href="#contact_configure">Configure contact page</a></li>
+				</ol>
+			</li>
+			<li><a href="#professors" class="section">Professors Page</a></li>
+			<li><a href="#events" class="section">Events Page</a></li>
+			<li><a href="#courses" class="section">Courses Page</a></li>
+		</ul>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Sample Configuration - University Wordpress Theme</h1>
+	<h2>See <a href="index.html">The Documentation</a> for full document</h2><hr><ul><li>Created: July 26th 2014</li>
+	<li>Latest Update: July 26th 2014</li><li>By: CactusThemes</li>
+	<li><a href="http://themeforest.net/user/cactusthemes">http://themeforest.net/user/cactusthemes</a></li>
+	<li>Email: <a href="mailto:admin@cactusthemes.com">admin@cactusthemes.com</a></li></ul>
+	<p>For support please checkout <a href="http://cactusthemes.ticksy.com/">CACTUSTHEME SUPPORT FORUM</a></p>
+	</section>
+		
+<section id="layout">
+<h3>University Layout</h3><hr class="notop"><br/>
+<div class="full">
+<!--<a href="assets/images/layout.png">-->
+<img src="img/loading.gif" data-src="assets/images/layout.png"/>
+<!--</a>-->
+</div>
+</section>
+
+
+<section id="homepage">
+<h3>Configure Home Page</h3><hr class="notop">	
+<h4 id="homepage_layout">1. HomePage Layout</h4>
+	<div class="box_code">Make sure you have understood the theme layout</div>
+	<div class="full"><img src="img/loading.gif" data-src="assets/images/homepage.png"/></div>
+<h4 id="homepage_assign">2. Assign a homepage</h4>
+	<ul>
+		<li>Go to <b>Pages > Add New page</b>, set name as “Home” </li>
+		<li>Choose <b>Frontpage Template</b> for this page
+			<div class="full"><img src="img/loading.gif" data-src="assets/images/choose-front-page-template.jpg"></div>
+		</li>
+		<li>In the <b>Layout Settings > Sidebar</b> choose <b>Hidden</b></li>
+		<li>Go to <b>Settings > Reading</b> and under “Front page displays”, click the radio button for A static page. Select “Home” in the first drop down (for Front page)
+	</ul>
+	
+<h4 id="homepage_header">3. Configure Header</h4>
+	Configure Header in <b>Front Page Header Setting</b> box. Choose the attributes as below
+	<ul>
+		<li><b>Header Background > Background Image</b>: Background will be a static image on Heading </li>
+		<li><b>Background Image</b>: Insert background image</li>
+		<li><b>Overlay content</b>: Choose <b>"Post Scroller"</b></li>
+		<li><b>Post style</b> Choose <b>"Post"</b></li>
+	</ul>	
+			
+	<div class="full"><img src="img/loading.gif" data-src="assets/images/header.png"/></div>
+	<div><b>Result</b></div>
+	<div class="full"><img src="img/loading.gif" data-src="assets/images/header_frontpage.png"/></div>
+
+<h4 id="homepage_sample_code">4. Sample Code</h4>
+Below is sample code for our demo home pages. Change the editor into Classic Editor (Text Mode) and paste the code into the page content. Alternatively, you can ignore this step and go to next one to configure the content yourself
+				<br/><br/>
+				<textarea cols="100" rows="5">[vc_row css=".vc_custom_1406285296035{padding-top: 60px !important;padding-bottom: 60px !important;}" u_row_style="0" u_row_scheme="1" u_row_paralax="0" el_class="main-color-1-bg"][vc_column width="1/3"][vc_column_text css_animation="bottom-to-top"]
+<h1>FOR EDUCATION</h1>
+Create beautiful website for your education and training center with University. Drag - drop to build your own layout with Visual Composer.
+
+[ct_button id="button_30" size="small" solid="0" link="#1" icon="" arrow="1" color="#"]PRODUCT TOUR[/ct_button][/vc_column_text][/vc_column][vc_column width="1/3"][vc_column_text css_animation="bottom-to-top"]
+<h1>COURSE POST</h1>
+Create and manage course is easy with U-course custom post. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+
+[ct_button id="button_30" size="small" solid="0" link="#1" icon="" arrow="1" color="#"]VIEW COURSES[/ct_button][/vc_column_text][/vc_column][vc_column width="1/3"][vc_column_text css_animation="bottom-to-top"]
+<h1>EVENT TICKETS</h1>
+Use U-event to create event and sell tickets via WooCommerce. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
+
+[ct_button id="button_30" size="small" solid="0" link="#1" icon="" arrow="1" color="#"]VIEW EVENTS[/ct_button][/vc_column_text][/vc_column][/vc_row][vc_row][vc_column width="1/1"][u_blog title="Blog" post_type="post" count="4" order="DESC" orderby="date" show_date="1" show_comment_count="1" more_link="#2" detail_text="DETAILS" column="2" css_animation="bottom-to-top"][/vc_column][/vc_row][vc_row css=".vc_custom_1404293921962{margin-bottom: -100px !important;padding-top: 100px !important;padding-bottom: 200px !important;background-image: url(http://demo.cactusthemes.com/university/wp-content/uploads/2014/06/background-1.jpg?id=489) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}" u_row_style="0" u_row_scheme="1" u_row_paralax="1"][vc_column width="1/1"][vc_column_text css_animation="bottom-to-top"]
+<h1 style="text-align: center;">University is where you build your future. Join Us Today.</h1>
+&nbsp;
+<p style="text-align: center;">[ct_button id="button_84" size="big" solid="0" link="#3" icon="" arrow="1" color="#"]VIEW COURSES[/ct_button]     OR     [ct_button id="button_82" size="big" solid="1" link="#3" icon="" arrow="1" color="#"]TAKE TOUR[/ct_button]</p>
+[/vc_column_text][/vc_column][/vc_row][vc_row css=".vc_custom_1404360490541{padding-bottom: 60px !important;}" u_row_style="0" u_row_paralax="0" u_row_scheme="0"][vc_column width="1/1"][u_post_grid title="Upcoming Events" description="Cras site amet nibh libero, in gravida nulla dignissimos" link_text="ALL EVENTS" link_url="#5" post_type="u_event" count="7" order="DESC" orderby="date" show_date="1" show_price="1" show_venue="1" show_time="1" gallery="0" css_animation="bottom-to-top"][/vc_column][/vc_row][vc_row css=".vc_custom_1405999179918{margin-bottom: 0px !important;padding-top: 50px !important;padding-bottom: 50px !important;background-color: #eaeaea !important;}" u_row_style="0" u_row_paralax="0" u_row_scheme="0"][vc_column width="1/1"][u_testimonial scroll="1" css_animation="bottom-to-top"][u_testimonial_item name="John Doe" title="Professor" avatar="178"]Lorem ipsum dolor sit amet, consectetur adipiscing elit metus vel leo placerat cursus. Nullam rutrum velit eget quam pretium vehicula. Maecenas enim velit.[/u_testimonial_item][u_testimonial_item name="Mr.John" title="Professor" avatar="173"]Lorem ipsum dolor sit amet, consectetur adipiscing elit metus vel leo placerat cursus. Nullam rutrum velit eget quam pretium vehicula. Maecenas enim velit.[/u_testimonial_item][u_testimonial_item name="Vicky" title="Professor" avatar="175"]Lorem ipsum dolor sit amet, consectetur adipiscing elit metus vel leo placerat cursus. Nullam rutrum velit eget quam pretium vehicula. Maecenas enim velit.[/u_testimonial_item][/u_testimonial][/vc_column][/vc_row][vc_row css=".vc_custom_1405999209321{margin-bottom: 0px !important;padding-top: 50px !important;padding-bottom: 50px !important;background-image: url(http://demo.cactusthemes.com/university/wp-content/uploads/2014/06/background-2.jpg?id=496) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}" u_row_style="0" u_row_paralax="1" u_row_scheme="1"][vc_column width="1/1"][vc_column_text css=".vc_custom_1406087542550{padding-top: 100px !important;padding-bottom: 100px !important;}" css_animation="left-to-right"]
+<h1 style="text-align: center;">The wait is over. Signup today to maximize your future!</h1>
+&nbsp;
+<p style="text-align: center;">[ct_button id="button_19" size="big" solid="1" link="#1" icon="" arrow="0" color="#"]BUY THIS THEME[/ct_button]</p>
+[/vc_column_text][/vc_column][/vc_row]
+				</textarea>
+				
+<h4 id="homepage_shortcodes">5. Add Shortcode Elements</h4>
+If you do not use sample code in previus step, see this step to understand how we build the homepage<br/><br/>
+	<div>Switch to <b>Backend Editor</b> and click <b>Add Element</b>.  The layout of page is built including sections as follows </div>
+	<ul>
+		<li><b>The first section:</b> Use<b> "TextBlock"</b> Shortcode & <b>"Textbox"</b> shortcode (See how to use <a target="_blank" href="index.html#!/shortcodes">here</a>)</li>
+		<li><b>The second section:</b> Use <b>"Blog"</b> shortcode with option <b>"Post Type"</b> and choose <b>"Post"</b> (In order to display Posts, you need to prepare articles to post on website, go to <b>Posts > Add New)</b>. </li>
+		<li><b>The third section:</b> "University is where you build your future" Use <b>"Text Block" </b>short code</li>
+		<li><b>The fourth section:</b> Use <b>"Post Grid"</b> shortcode with option <b>Post Type</b> and choose <b>"Event</b> (In order to display Events, you need to prepare articles for Event, go to <b>U-Event >Add New </b> Event: prepare content for Event see the instruction how to create Event <a target ="_blank" href="index.html#!/Event">here</a>).</li>
+		<li><b>The fifth section:</b> Use <b>"Testimonial"</b> shortcode (see how to use <a target="_blank" href="index.html#!/shortcodes">here</a>)</li>
+			<!--<li>The sixth section: Use"Post Grid" shortcode with option Post Type choose "Course" (In order to display Courses, go to <b>U-Course > Add New Course).</b></li>-->
+		<li><b>The final section:</b> Use <b>"TextBlock"</b> shortcode
+			<div class="full"><img src="img/loading.gif" data-src="assets/images/pages.png"/></div>
+		<div><b>Note</b>: If you would like to insert background image for section of description of the content in <b>"TextBlock" Shortcode & "Textbox"</b> shortcode in section 1, click <b>Edit row > Design options > Background</b><br/> </div>
+			<div class="fl"><img src="img/loading.gif" data-src="assets/images/edit_row.png"/></div>
+			<div class="fr"><img src="img/loading.gif" data-src="assets/images/edit_background.png"/></div><br>
+			<div class="clear"><!-- --></div>
+		 </li>
+	</ul>
+<h4 id="homepage_menu">6. Configure navigation</h4>
+Go to <b>Appearance > Menus</b>. Create menus for Secondary Menu and Primary Menu. Refer the instruction in <a target="_blank" href="index.html#!/menu_create_menu">Create a menu</a> 
+<h4 id="homepage_menu">7. Change Logo</h4>
+Change your logo, go to <b>Appearance > Theme Options > General > Logo Image</b> and Upload your logo image 
+<h4 id="homepage_searchbox">8. Turn on Search box</h4>
+Turn the search box on, go to <b>Theme Options > General > Enable Search</b> choose <b>"ON"</b>
+<h4 id="homepage_top_icons">9. Configure top social icons</h4>
+	Configure the top social icons, go to <b>Appearance > Widgets</b> drag Widget <b>"Text"</b> name into <b>Top Nav Sidebar</b> and add a code and <b>"Save"</b>, for example:<br/><br/>
+					<textarea cols="100" rows="5"><a href="http://facebook.com/cactusthemes"><i class="fa fa-facebook"></i></a><a href="http://youtube.com/cactusthemes"><i class="fa fa-youtube"></i></a><a href="http://twitter.com/cactusthemes"><i class="fa fa-twitter"></i></a></textarea>
+				
+				<div class="fl"><img src="img/loading.gif" data-src="assets/images/sidebar_widget.png"/></div><br>
+				<div class="fr"><img src="img/loading.gif" data-src="assets/images/sidebar_widgetText.png"/></div><br>
+							<div class="clear"><!-- --></div>
+				<div><b>Result</b></div>
+				<div class="full"><img src="img/loading.gif" data-src="assets/images/socia_nav.png"/></div><br>
+<h4 id="homepage_footer">10. Configure footer widgets</h4>
+	Go to Widgets and drag widgets into Footer Sidebar.<br/><br/>
+	<div>There are three lines in Footer Sidebar in demo page, the first line uses widget name "Text". For example: For the content</div>
+	<ul>
+		<li>[textbox icon=" fa-star" heading="Bright Career" layout="left"]Atero voluptatum ptatum eos et accusamus et iusto odio dignissimos ducimus.[/textbox]
+			</li>
+			<li>Including
+				<ul><li>[textbox] &[/textbox]  // End and start tag of textbox</li>
+					<li>icon="" // The names of icons using FontAwesome. For example: icon "fa-star" is a symbol with the shape "star"</li>
+					<li>heading="" // Enter title of text</li>
+					<li>layout=""  // The text is aligned right, left or center </li>
+					<li>Atero voluptatum ptatum eos et accusamus et iusto odio dignissimos ducimus// Text's content </li>
+				</ul>
+			</li>
+			<li>Widget width Choose <b>col-md-4</b></li>
+			<li>Widget Style: Choose Fullwidth</li>
+	</ul>
+	<div class="full"><img src="img/loading.gif" data-src="assets/images/example_widget.png"/></div>
+
+	<div>Create line crossing word "ENROLL TODAY" using Widget name "U-Divider"</div>
+	<div class="full"><img src="img/loading.gif" data-src="assets/images/u-Divider.png"/></div>
+	<div> The second line uses Widget name "Custom Menu" with attributes</div>
+			<div class="full"><img src="img/loading.gif" data-src="assets/images/widget2.png"/></div>
+			<ul><li>Title: Enter the title</li>
+				<li>Select Menu: Choose a menu(For example: For Top Menu- Please go to Menus to create Top Menu)</li>
+				<li>Widget width: Choose Col-md-3</li>
+				<li>Widget Style: Choose Fullwidth</li>
+				<div class="full"><img src="img/loading.gif" data-src="assets/images/widget1.png"/></div>
+			</ul>
+			
+	<div> The third line uses Widget name Simple Twitter Tweets, Recent Posts, Flickr Badge (In order to have these widgets, you need to install Flickr Badges Widget plugin and Simple Twitter Tweets plugin)
+	<div class="full"><img src="img/loading.gif" data-src="assets/images/widget6.png"/></div>
+	</div>
+<h4 id="homepage_social_links">11. Add social links</h4>
+	Go to <b>Theme Options > Social Accounts</b> and paste your social profile page URL into the textbox<br/><br/>
+						<div class="full"><img src="img/loading.gif" data-src="assets/images/social.png"/>
+</section>
+<section id="configure_revolution">
+<h3>Configure Header With Revolution Slider</h3><hr class="notop">
+		<ol>
+			<li>Go to <b>Pages > Add New page</b></li>
+			<li>Choose <b>Frontpage Template</b> for this page</li>
+			<li>In the <b>Layout Settings > Sidebar</b> choose <b>Hidden</b></li>
+			<li>Configure Header in <b>Front Page Header Setting</b> box. Choose the attributes as below
+				<ul>
+					<li><b>Header Background > Revolution Slider</b>: Choose to use Revolution Slider for Header Background. You will need to create a slider in advance</li>
+					<li><b>Revolution Slider</b>: Enter (alias) name of slider here</li>
+					<li><b>Overlay content</b>: Choose <b>None</b></li>
+					<li><b>Enable University Style for Revolution Slider</b>: Choose <b>"OFF"</b> for <a href="#configure_revolution_button"><b>Style 1</b></a>, choose "ON" for <a href="#configure_revolution_custom"><b>Style 2</b></a></li>
+					<div class="full"><img src="img/loading.gif" data-src="assets/images/header_revolution.png"/></div>
+					<div><b> The result is as our Homepage V2 demo page </b></div>
+					<div class="full"><img src="img/loading.gif" data-src="assets/images/revolution_slider.png"/></div>
+				</ul>
+			</li>
+		</ol>
+			<h4 id="configure_revolution_button">Revolution Slider with button</h4>
+			<div><b><a href="#configure_revolution">Style 1</a></b>: (to configure Revolution Slider, see more at <a href="http://www.wpexplorer.com/revolution-slider-review-guide/"> here</a>) In order to put buttons into Revolution Slider as the image above, please following these steps </div>
+				<ul>
+					<li><b>Step 1</b>: Go to <b>Revolution Slider > Edit Slides > Edit Slide</b> </li>
+					<li><b>Step 2</b>: Click <b>Add Layer</b></li>
+					<li><b>Step 3</b>: In <b>Text/Html</b> enter code, for example <input class="boxinput" value='<a href="#">BUY THIS THEME</a>'/>, in which <b>BUY THIS THEME</b> is the name of Button, <b>href</b> is the URL to navigate</li>
+					<li><b>Step 4</b>: In <b>Layer Links & Advanced Params</b> enter button class, for example <input class="boxinput1" value="un-button-2-lg"/>
+						<ul><li><b>In which: Button class includes</b>
+								<ul><li><b><i>un-button-1</i></b> - Small button with border</li>
+									<li><b><i>un-button-1-lg</i></b> - Big button with border</li>
+									<li><b><i>un-button-2</i></b> - Small button with background</li>
+									<li><b><i>un-button-2-lg</i></b> - Big button with background nổi</li><br/>
+										<div class="full"><img src="img/loading.gif" data-src="assets/images/config_revolution.png"/></div>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><b>Step 5:</b> Save all</li>
+				</ul>
+				<h4 id="configure_revolution_custom">Custom Revolution Slider</h4>
+				<div><b><a href="#configure_revolution">Style 2</a></b>: In order to create a <b><i>Custom Revolution Slider</i></b> style as the image demo below, please following these steps</div>
+					<div class="full"><img src="img/loading.gif" data-src="assets/images/universityslider1.png"/></div>
+					<ul>
+						<li><b>Step 1</b>: go to <b>Revolution Slider > Edit Slides > Edit Slide</b> </li>
+						<li><b>Step 2</b>: click <b>"Add Layer"</b></li>
+						<li><b>Step 3</b>: enter this code into <b>Text/Html</b> </li></br>
+<textarea cols="100" rows="7">
+
+<div class="text-r-silder">          
+	<div class="r-title main-color-1">Titile</div>               
+	<div class="r-content">Contents</div>               
+</div>
+</textarea></br>
+							<li><b>Step 4</b>: choose <b>"Black"</b> for <b>Style</b></li><br/>
+							<div class="full"><img src="img/loading.gif" data-src="assets/images/revolutions_code.png"/></div>
+							<li><b>Step 5</b>: click <b>Update Slide</b> to save</li>
+							
+					</ul>
+							
+
+</section>
+
+<section id="contact">
+<h3>Create Contact Page</h3><hr class="notop">
+<h4 id="contact_contactform">Create a Contact Form 7</h4>
+	<ol>
+		<li>Install Contact form 7 plugin</li>
+				<li>Go to <b>Contact > Add New</b>, enter form's title, and enter this code into Form and save it<br/><br/>
+			<textarea cols="120" rows="7"><p>[text* your-name placeholder "Your name"] </p>
+	<p>[email* your-email  placeholder "Your email"] </p>
+	<p>[text your-subject  placeholder "Subject"] </p>
+	<p>[textarea your-message  placeholder "Your Message"] </p>
+	<p>[submit "Send &rsaquo;"]</p>
+		</textarea></br>
+		<div class="full"><img src="img/loading.gif" data-src="assets/images/contact_from1.png"/></div>
+		</li>
+		<li>Save and copy the contact form shortcode<br/>
+		<div class="full"><img src="img/loading.gif" data-src="assets/images/contact-form-shortcode.jpg"/></div>
+	</ol>
+<h4 id="contact_configure">Configure Contact Page</h4>
+	<ol><li>Go to <b>Pages > Add New page > Backend Editor > Add row</b> and divide into two columns<br/>
+			<div class="full"><img src="img/loading.gif" data-src="assets/images/contact2.png"/></div>
+		</li>
+		<li> Click "plus sign" in column 1 and choose <b>"WP Text"</b> <img src="img/loading.gif" data-src="assets/images/wptext.png"/>
+		and then enter content into "Text" and save. 
+		Then, add Contact form 7  <img src="img/loading.gif" data-src="assets/images/contact7.png"/> enter form title and Select contact form here.
+		(In order to have the list in form, you need to install Contact form 7 plugin and configure contact form, see how to configure below )</p><br/>
+			<div class="full"><img src="img/loading.gif" data-src="assets/images/contact1.png"/></div>
+		</li>
+		
+		<li>Click "plus sign" in column 2 and choose "Google Maps" <img src="img/loading.gif" data-src="assets/images/map1.png"/>
+		and enter embed code of google map into Map embed iframe. In order to embed code, go to Google maps to create your map.
+		1) Find location 2) Click "Share" and make sure map is public on the web 3) 
+		Click folder icon to reveal "Embed on my site" link 4) Copy iframe code and paste it here.</p>
+			<div class="full"><img src="img/loading.gif" data-src="assets/images/map.png"/></div>
+		</li>
+		<li>Click Publish to save</li>
+	</ol>
+	<div class="full"><img src="img/loading.gif" data-src="assets/images/contact-us1.png"/></div>
+</section>
+
+
+<section id="professors">
+<h3>Members Page</h3><hr class="notop">
+		
+			<ol>
+				<li>By default, the Members Page URL is <i>http://yourdomain.com/member/</i>. For example: <a href="http://demo.cactusthemes.com/university/member/">http://demo.cactusthemes.com/university/member/</a></li>
+				<li>Go to <b>Appearance > Menus > Using the Custom Links</b> box in the left column and paste link to URL textbox, click <b>Add To Menu</b> to add the item to the menu, then save.</li>
+				<li>If you want to change the word <b>member</b>, go to <b>U-Member Settings</b> page and change <b>Members Slug</b> value. Remember to save the permalinks settings again in <b>Settings > Permalinks</b></li>
+			</ol>
+			<div class="full"><img src="img/loading.gif" data-src="assets/images/Professors.png"/></div>
+</section>
+
+<section id="events">
+<h3>Events Page</h3><hr class="notop">
+		
+			<ol>
+				<li>By default, the Events Page URL is <i>http://yourdomain.com/event/</i>. For example: <a href="http://demo.cactusthemes.com/university/event/">http://demo.cactusthemes.com/university/event/</a></li>
+				<li>Go to <b>Appearance > Menus > Using the Custom Links</b> box in the left column and paste link to URL textbox, click <b>Add To Menu</b> to add the item to the menu, then save.</li>
+				<li>If you want to change the word <b>event</b>, go to <b>U-Event Settings</b> page and change <b>Events Slug</b> value. Remember to save the permalinks settings again in <b>Settings > Permalinks</b></li>
+				<li>Go to <b>U-Event Settings</b> to configure other things</li>
+			</ol>
+</section>
+
+<section id="courses">
+<h3>Courses Page</h3><hr class="notop">
+			<ol>
+				<li>By default, the Professor Page URL is <i>http://yourdomain.com/course/</i>. For example: <a href="http://demo.cactusthemes.com/university/course/">http://demo.cactusthemes.com/university/course/</a></li>
+				<li>Go to <b>Appearance > Menus > Using the Custom Links</b> box in the left column and paste link to URL textbox, click <b>Add To Menu</b> to add the item to the menu, then save.</li>
+				<li>If you want to change the word <b>course</b>, go to <b>U-Course Settings</b> page and change <b>Courses Slug</b> value. Remember to save the permalinks settings again in <b>Settings > Permalinks</b></li>
+				<li>Go to <b>U-Course Settings</b> to configure other things</li>
+			</ol>
+</section>
+
+	</div>
+</body>
+</html>

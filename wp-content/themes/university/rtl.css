@@ -1,0 +1,169 @@
+@charset "utf-8";
+*{
+	direction:rtl;
+	text-align:right;
+}
+.main-menu li *{
+	direction:ltr;
+}
+#player-embed{
+	text-align:center;
+}
+.owl-carousel .owl-wrapper-outer {
+	direction: ltr;
+}
+.input-group{
+	direction:ltr;
+}
+.headline .htitle .hicon{
+	float:right;
+}
+.headline .htitle .hicon .first-tex{
+	margin-left:0;
+	margin-right:10px;
+}
+#head-carousel .video-item .item-head h3{
+	text-align:center;
+}
+.smart-control{
+	direction:ltr;
+	margin-left:10px;
+}
+.video-item .item-meta span {
+	margin-right: 0px;
+	margin-left: 20px;
+}
+.tm_widget_categories ul li a,.tm_widget_categories ul li p {
+	margin-left: 0px;
+	margin-right: 20px;
+}
+.widget.widget-border.widget_nav_menu .menu .menu-item:before {
+	margin-right: 0px;
+	margin-left: 10px;
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+}
+.readmore .fa-angle-right{
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+}
+
+/*vc carousel*/
+.vc_images_carousel * {
+	direction: ltr;
+	text-align: left;
+}
+
+#bbpress-forums li.bbp-header .bbp-reply-content,
+.bbp-body li.bbp-topic-freshness, #bbpress-forums .bbp-body li.bbp-forum-freshness{
+	direction:ltr;
+}
+#bbpress-forums .bbp-forums-list{ direction:ltr; text-align:right}
+#bbpress-forums li.bbp-forum-info,
+.forum-archive #bbpress-forums .bbp-forum-info .bbp-forum-content{ text-align:right}
+#bbpress-forums .bbp-forums-list li:last-child{ margin-right:0}
+#bbpress-forums .bbp-body li.bbp-forum-topic-count, .bbp-body li.bbp-topic-reply-count, .bbp-body li.bbp-topic-voice-count, #bbpress-forums .bbp-body li.bbp-forum-reply-count{ text-align:center}
+.single-forum .bbp-topics .bbp-body ul li.bbp-topic-title{ text-align:right}
+.single-forum .bbp-body li.bbp-topic-freshness{ text-align:left}
+#bbpress-forums fieldset.bbp-form label{ direction:ltr}
+#bbpress-forums fieldset.bbp-form #bbp_topic_subscription{ margin-right:10px}
+#bbpress-forums fieldset.bbp-form label[for=bbp_topic_subscription]{ margin-right:20px}
+div.bbp-submit-wrapper{ float:right}
+#bbpress-forums div.bbp-reply-content,
+#bbpress-forums .bbp-forum-info .bbp-forum-content{ text-align:right}
+.bbp-pagination .bbp-pagination-count{direction: ltr;}
+#bbpress-forums fieldset.bbp-form legend{direction: ltr; text-align: right;}
+.single-forum #bbpress-forums .bbp-body li.bbp-forum-freshness .date-post{margin-bottom: -20px;}
+#bbpress-forums div.bbp-reply-author *{ direction:ltr; text-align:center}
+li.bbp-header div.bbp-reply-content span#subscription-toggle{ direction:ltr}
+.bbp-topic-freshness .date-post a, #bbpress-forums .bbp-body li.bbp-forum-freshness .date-post a{ right:50px; direction:ltr}
+#bbpress-forums .bbp-body li.bbp-forum-freshness .bbp-author-name{ margin-right:6px;}
+li.bbp-forum-freshness, li.bbp-topic-freshness,
+li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li.bbp-topic-reply-count, li.bbp-forum-freshness{ text-align: center}
+#calendar-box *{ direction:ltr; text-align:left}
+.container.cal-event-list .close-button{ text-align:center !important}
+#calendar-box .events-list{ text-align:center}
+#calendar-box .row.slider-item .col-md-9,
+#calendar-box .row.slider-item .col-md-9 *{ text-align:right}
+.cal-event-list .slider-item .img-content{ float:right}
+.container.cal-event-list .owl-controls .owl-buttons{ text-align:left !important;}
+.container.cal-event-list .owl-controls *{ text-align:center !important; direction:ltr !important}
+
+@media(min-width: 992px){
+.page-heading .col-md-8, .page-heading .col-md-4{
+	float:right;
+}
+.blog-listing .post-item .col-md-6.col-sm-12{
+	float:right;
+}
+}
+@media (min-width: 768px){
+.navbar-header {
+    float: right;
+}
+.navbar-nav {
+    float: right;
+	padding-right: 0;
+}
+.navbar-right {
+    float: left !important;
+	padding-left: 15px;
+}
+}
+.dropdown-menu {
+    left: auto;
+	right:0;
+}
+.navbar-right .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+.pathway, .breadcrumbs{
+	text-align:left;
+}
+.thumbnail-overflow {
+    right: 0;
+	left:auto;
+}
+.normal-sidebar .widget ul li:before{
+	content: "\f104";
+    margin-right: 0px;
+	margin-left:5px;
+}
+.uni-lastest .item .thumb {
+    float: right;
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.single-event-content .col-md-4.col-sm-5{
+	float:right;
+}
+.single-course-meta .course-des .btn-grey .fa-angle-right:before {
+    content: "\f104";
+}
+.related-event .thumb {
+    margin-right: 0;
+    float: right;
+    margin-left: 20px;
+}
+
+.owl-theme .owl-controls .owl-pagination {
+    text-align: center;
+}
+.testimonial-item p {
+    text-align: center;
+}
+
+.cactus-rev-slider-default div[id*="rev_slider"] .tp-parallax-wrap, .cactus-rev-slider-default div[id*="rev_slider"] .tp-loop-wrap, .cactus-rev-slider-default div[id*="rev_slider"] .tp-mask-wrap{direction:ltr}
+.cactus-rev-slider-default .text-r-silder{direction:rtl}
+.normal-sidebar .widget ul{padding-right:0}
+.woocommerce .woocommerce-message .button{margin-left:10px}
+.woocommerce .woocommerce-product-rating .star-rating, .woocommerce-page .woocommerce-product-rating .star-rating{float:right}
+.woocommerce .woocommerce-product-rating .star-rating span, .woocommerce-page .woocommerce-product-rating .star-rating span{float: right; right: 0; left: auto}
+.woocommerce .woocommerce-product-rating .star-rating:before, .woocommerce-page .woocommerce-product-rating .star-rating:before{float: right; right: 0; left: auto}
+.woocommerce .woocommerce-product-rating .star-rating span:before, .woocommerce-page .woocommerce-product-rating .star-rating span:before{float: right; right: 0; left: auto}
+.single-product.woocommerce div.product form.cart div.quantity{float: right}
+.woocommerce #review_form #respond .cm-text, .woocommerce-page #review_form #respond .cm-text{padding-left:0; padding-right: 70px}
+.time-cm{float: left}
